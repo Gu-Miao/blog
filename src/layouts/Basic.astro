@@ -1,11 +1,12 @@
 ---
+import { LANGUAGE } from '@/common/constants'
 import Head, { Props } from '@/components/Head.astro'
 
 const props = Astro.props as Props
 ---
 
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang={LANGUAGE}>
 
 <Head {...props} />
 
