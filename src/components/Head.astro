@@ -2,32 +2,35 @@
 import { TITLE, DESCRIPTION } from '@/common/constants'
 
 export interface Props {
-  title?: string;
-  description?: string;
-  image?: string;
-  canonicalURL?: string | URL;
+  title?: string
+  description?: string
+  image?: string
+  tags?: string[]
+  canonicalURL?: string | URL
 }
 
-const { title, description = DESCRIPTION, image, canonicalURL } = Astro.props as Props;
+const { title, description = DESCRIPTION, image, tags = [], canonicalURL } = Astro.props as Props
 const wholeTitle = `${TITLE}${title ? ` | ${title}` : ''}`
+const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', '光舞', '博客', 'blog', 'astro', 'vercel'].concat(tags)
 ---
 
 <head>
   <!-- Common -->
   <meta charset="UTF-8" />
   <title>{wholeTitle}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content={wholeTitle}>
   <meta name="description" content={description} />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-
-  <!-- Sitemap -->
-  <link rel="sitemap" href="/sitemap.xml" />
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" href="/feed/posts.xml" />
+  <meta name="keywords" content={keywords.toString()}>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="/sitemap.xml" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" href="/feed/posts.xml" />
 
   <!-- SEO -->
   <link rel="canonical" href={canonicalURL} />
