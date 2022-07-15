@@ -1,13 +1,60 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+---
+import dayjs from 'dayjs/esm'
+import Basic from "@/layouts/Basic.astro"
+import { Frontmatter } from '@/common/types'
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+const canonicalURL = Astro.canonicalURL
+const posts = await Astro.glob<Frontmatter>('./**/*.md')
+const sortedPosts = posts.sort((p1, p2) => {
+  return dayjs(p2.frontmatter.createdAt).unix() - dayjs(p1.frontmatter.createdAt).unix()
+})
+---
 
-<body>
+<Basic {canonicalURL}>
+  <div class="home">
+    <h1>分淼必争</h1>
+    <ul class="posts">
+      {sortedPosts.map((post)=><li>
+        <h2>
+          <a href={post.url}>{post.frontmatter.title}</a>
+        </h2>
+        <p>{post.frontmatter.description}</p>
+        <p>{post.frontmatter.tags.map(tag=><span class="tag">{tag}</span>)}</p>
+        <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
+      </li>)}
+    </ul>
+  </div>
+</Basic>
 
-</body>
+<style lang="less">
+  .home {
+    padding: 2em;
+    background-color: #eee;
 
-</html>
+    .posts {
+      margin-top: 2.5em;
+      padding-inline-start: 1em;
+      list-style: none;
+
+      li {
+        margin-bottom: 1.5em;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-right: .5em;
+        padding: .4em .5em;
+        background: #0ae;
+        color: white;
+        font-size: .8em;
+        border-radius: .25em;
+      }
+
+      .time {
+        font-size: 1rem;
+        font-weight: normal;
+        color: #666;
+      }
+    }
+  }
+</style>

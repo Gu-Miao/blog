@@ -1,0 +1,48 @@
+---
+import { TITLE, DESCRIPTION } from '@/common/constants'
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string | URL;
+}
+
+const { title, description = DESCRIPTION, image, canonicalURL } = Astro.props as Props;
+const wholeTitle = `${TITLE}${title ? ` | ${title}` : ''}`
+---
+
+<head>
+  <!-- Common -->
+  <meta charset="UTF-8" />
+  <title>{wholeTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="/sitemap.xml" />
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" href="/feed/posts.xml" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <!-- SEO -->
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content={wholeTitle} />
+  <meta property="og:description" content={description} />
+  {image &&
+  <meta property="og:image" content={new URL(image, canonicalURL)} />}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content={image ? "summary_large_image" : "summary" } />
+  <meta name="twitter:site" content="@astro" />
+  <meta name="twitter:title" content={wholeTitle} />
+  <meta name="twitter:description" content={description} />
+  {image &&
+  <meta name="twitter:image" content={image} />}
+</head>

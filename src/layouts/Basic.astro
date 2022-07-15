@@ -1,0 +1,47 @@
+---
+import Head, { Props } from '@/components/Head.astro'
+
+const props = Astro.props as Props
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<Head {...props} />
+
+<style is:global lang="less">
+  @size: 8px;
+
+  ::-webkit-scrollbar {
+    width: @size;
+    height: @size;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: @size;
+    background: #eee;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: @size;
+    background: #bbb;
+  }
+
+  :root {
+    font-size: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+</style>
+
+<body>
+  <slot />
+</body>
+
+</html>

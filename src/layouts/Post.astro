@@ -1,0 +1,73 @@
+---
+import Basic from "./Basic.astro"
+import { Frontmatter } from '@/common/types'
+
+interface Props {
+  content: Frontmatter
+}
+
+const { content } = Astro.props as Props
+const canonicalURL = Astro.canonicalURL
+---
+
+<Basic {canonicalURL} {...content}>
+  <div class="blog">
+    <div class="container">
+      <slot />
+    </div>
+  </div>
+</Basic>
+
+<style is:global lang="less">
+  .blog {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 1.5em;
+    background-color: #ddd;
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5em;
+      line-height: 1.57;
+      background-color: white;
+      border-radius: .5em;
+    }
+
+    @media screen and (max-width: 720px) {
+      & {
+        padding: 0;
+      }
+
+      .container {
+        margin: 0;
+        border-radius: 0
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: .5em;
+    }
+
+    ul,
+    ol {
+      padding-inline-start: 1.25em;
+    }
+
+    pre {
+      padding: 1.2em 1em;
+      border-radius: .5em;
+    }
+
+    blockquote {
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      padding: .5em 1em;
+      background-color: #ddd;
+      border-radius: .5em;
+    }
+  }
+</style>
