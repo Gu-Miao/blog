@@ -2,6 +2,7 @@
 import dayjs from 'dayjs'
 import Basic from "@/layouts/Basic.astro"
 import { Frontmatter } from '@/common/types'
+import { DESCRIPTION, TITLE } from '@/common/constants'
 
 const canonicalURL = Astro.canonicalURL
 const posts = await Astro.glob<Frontmatter>('./**/*.md')
@@ -12,12 +13,13 @@ const sortedPosts = posts.sort((p1, p2) => {
 
 <Basic {canonicalURL}>
   <div class="home">
-    <h1>分淼必争</h1>
+    <h1 class="title">{TITLE}</h1>
+    <h2 class="description">{DESCRIPTION}</h2>
     <ul class="posts">
       {sortedPosts.map((post)=><li>
-        <h2>
+        <h3>
           <a href={post.url}>{post.frontmatter.title}</a>
-        </h2>
+        </h3>
         <p>{post.frontmatter.description}</p>
         <p>{post.frontmatter.tags.map(tag=><span class="tag">{tag}</span>)}</p>
         <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
@@ -31,9 +33,22 @@ const sortedPosts = posts.sort((p1, p2) => {
     padding: 2em;
     background-color: #eee;
 
+    .title {
+      font-family: '楷体';
+      font-size: 2.5em;
+    }
+
+    .description {
+      margin-top: -1.4em;
+      font-family: '楷体';
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #666;
+    }
+
     .posts {
       margin-top: 2.5em;
-      padding-left: 1em;
+      padding-left: 0;
       list-style: none;
 
       li {
@@ -44,11 +59,15 @@ const sortedPosts = posts.sort((p1, p2) => {
     .tag {
       display: inline-block;
       margin-right: .5em;
-      padding: .4em .5em;
+      padding: .25em .7em;
       background: #0ae;
       color: white;
       font-size: .8em;
       border-radius: .25em;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     .time {
