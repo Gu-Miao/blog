@@ -60,6 +60,11 @@ const canonicalURL = Astro.canonicalURL
     pre {
       padding: 1.2em 1em;
       border-radius: .5em;
+
+      &::-webkit-scrollbar-track {
+        margin: 0 1.2em;
+        background: inherit;
+      }
     }
 
     blockquote {
