@@ -13,18 +13,20 @@ const sortedPosts = posts.sort((p1, p2) => {
 
 <Basic {canonicalURL}>
   <div class="home">
-    <h1 class="title">{TITLE}</h1>
-    <h2 class="description">{DESCRIPTION}</h2>
-    <ul class="posts">
-      {sortedPosts.map((post)=><li>
-        <h3>
-          <a href={post.url}>{post.frontmatter.title}</a>
-        </h3>
-        <p>{post.frontmatter.description}</p>
-        <p>{post.frontmatter.tags.map(tag=><span class="tag">{tag}</span>)}</p>
-        <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
-      </li>)}
-    </ul>
+    <div class="container">
+      <h1 class="title">{TITLE}</h1>
+      <h2 class="description">{DESCRIPTION}</h2>
+      <ul class="posts">
+        {sortedPosts.map((post)=><li>
+          <h3>
+            <a href={post.url}>{post.frontmatter.title}</a>
+          </h3>
+          <p>{post.frontmatter.description}</p>
+          <p>{post.frontmatter.tags.map(tag=><span class="tag">{tag}</span>)}</p>
+          <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
+        </li>)}
+      </ul>
+    </div>
   </div>
 </Basic>
 
@@ -32,6 +34,11 @@ const sortedPosts = posts.sort((p1, p2) => {
   .home {
     padding: 2em;
     background-color: #eee;
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
 
     .title {
       font-family: '楷体';
