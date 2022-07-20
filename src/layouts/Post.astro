@@ -46,12 +46,6 @@ const canonicalURL = Astro.canonicalURL
       }
     }
 
-    img {
-      display: block;
-      width: 100%;
-      border-radius: .5em;
-    }
-
     ul,
     ol {
       padding-left: 1.25em;
@@ -73,6 +67,24 @@ const canonicalURL = Astro.canonicalURL
       padding: .5em 1em;
       background-color: #ddd;
       border-radius: .5em;
+    }
+
+    :not(pre)>code {
+      background-color: #eee;
+      padding: .3em .5em;
+      border-radius: .3em;
+    }
+
+    summary {
+      background-color: #eee;
+      padding: .3em .8em;
+      border-radius: .5em;
+      cursor: pointer;
+      transition: background-color .2s ease-in-out;
+
+      &:hover {
+        background-color: #ddd;
+      }
     }
   }
 </style>
