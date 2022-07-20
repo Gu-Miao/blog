@@ -24,13 +24,28 @@
       "title: $1",
       "description: $2",
       "image: /images/$3.webp",
-      "createdAt: '$4'",
-      "updatedAt: '$5'",
+      "createdAt: '${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}'",
+      "updatedAt: '${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}'",
       "category: $6",
       "tags:",
       "  - $7",
       "---",
       "$0"
     ]
+  },
+  "acceptChallenges": {
+    "scope": "markdown",
+    "prefix": "acceptChallengesSnippet",
+    "body": "<p><a href=\"https://tsch.js.org/$1/play/zh-CN\" target=\"_blank\"><img width=\"100\" src=\"https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white\" alt=\"接受挑战\"/></a></p>$0"
+  },
+  "details": {
+    "scope": "markdown",
+    "prefix": "detailsSnippet",
+    "body": ["<details>", "<summary>$1</summary>", "", "  $0", "</details>"]
+  },
+  "answer": {
+    "scope": "markdown",
+    "prefix": "answerSnippet",
+    "body": ["<details>", "<summary>展开查看答案</summary>", "", "```ts", "$0", "```", "</details>"]
   }
 }
