@@ -11,6 +11,14 @@ const canonicalURL = Astro.canonicalURL
 ---
 
 <Basic {canonicalURL} {...content}>
+  <Fragment slot="head">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </Fragment>
   <div class="blog">
     <div class="container">
       <slot />
