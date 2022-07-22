@@ -6,4 +6,5 @@ export interface Frontmatter {
   updatedAt: string
   category: string
   tags: string[]
+  serials?: string
 }

@@ -1,20 +1,23 @@
 ---
 layout: '@/layouts/Post.astro'
-title: type-challenges【一】简单
-description: type-challenges 项目目意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，或者只是单纯的享受挑战的乐趣！它可以帮助我们更好地编写类型代码，提升自己的能力。今天，我们就先来看看它的简单难度。
+title: type-challenges 类型挑战系列【一】
+description: type-challenges 意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
 image: /images/type-changes.webp
 createdAt: '2022-07-20'
-updatedAt: '2022-07-20'
+updatedAt: '2022-07-22'
 category: typescript
 tags:
   - typescript
   - type-challenges
   - 转载
+serials: type-challenges 类型挑战系列
 ---
 
-# type-challenges【一】简单
+# type-challenges 类型挑战系列【一】
 
-[type-challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md)意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，或者只是单纯的享受挑战的乐趣！它可以帮助我们更好地编写类型代码，提升自己的能力。今天，我们就先来看看它的简单难度。
+[type-challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md)意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
+
+> 本篇内容全部为**简单**难度。
 
 ## 实现 Pick
 
