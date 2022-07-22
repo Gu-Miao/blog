@@ -11,41 +11,28 @@ export interface Props {
 
 const { title, description = DESCRIPTION, image, tags = [], canonicalURL } = Astro.props as Props
 const wholeTitle = `${TITLE}${title ? ` | ${title}` : ''}`
-const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', '光舞', '博客', 'blog', 'astro', 'vercel'].concat(tags)
+const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', '光舞', '博客', 'blog', 'astro', 'vercel'].concat(
+  tags,
+)
 ---
 
 <head>
-  <!-- Common -->
   <meta charset="UTF-8" />
   <title>{wholeTitle}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content={wholeTitle}>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content={wholeTitle} />
   <meta name="description" content={description} />
-  <meta name="keywords" content={keywords.toString()}>
-
-  <!-- Favicon -->
+  <meta name="keywords" content={keywords.toString()} />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-  <!-- Sitemap -->
   <link rel="sitemap" href="/sitemap.xml" />
-
-  <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" href="/posts.xml" />
-
-  <!-- SEO -->
   <link rel="canonical" href={canonicalURL} />
-
-  <!-- OpenGraph -->
   <meta property="og:title" content={wholeTitle} />
   <meta property="og:description" content={description} />
-  {image &&
-  <meta property="og:image" content={new URL(image, canonicalURL)} />}
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content={image ? "summary_large_image" : "summary" } />
+  {image && <meta property="og:image" content={new URL(image, canonicalURL)} />}
+  <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
   <meta name="twitter:site" content="@astro" />
   <meta name="twitter:title" content={wholeTitle} />
   <meta name="twitter:description" content={description} />
-  {image &&
-  <meta name="twitter:image" content={image} />}
+  {image && <meta name="twitter:image" content={image} />}
 </head>

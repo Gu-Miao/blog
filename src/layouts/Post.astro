@@ -1,5 +1,5 @@
 ---
-import Basic from "./Basic.astro"
+import Basic from './Basic.astro'
 import { Frontmatter } from '@/common/types'
 
 interface Props {
@@ -17,14 +17,12 @@ const canonicalURL = Astro.canonicalURL
     </div>
   </div>
 </Basic>
-
 <style is:global lang="less">
   .blog {
     height: 100vh;
     overflow-y: auto;
     padding: 1.5em;
     background-color: #ddd;
-
     .container {
       width: 100%;
       max-width: 1200px;
@@ -32,56 +30,47 @@ const canonicalURL = Astro.canonicalURL
       padding: 1.5em;
       line-height: 1.57;
       background-color: white;
-      border-radius: .5em;
+      border-radius: 0.5em;
     }
-
     @media screen and (max-width: 720px) {
       & {
         padding: 0;
       }
-
       .container {
         margin: 0;
-        border-radius: 0
+        border-radius: 0;
       }
     }
-
     ul,
     ol {
       padding-left: 1.25em;
     }
-
     pre {
       padding: 1.2em 1em;
-      border-radius: .5em;
-
+      border-radius: 0.5em;
       &::-webkit-scrollbar-track {
         margin: 0 1.2em;
         background: inherit;
       }
     }
-
     blockquote {
       margin-left: 0;
       margin-right: 0;
-      padding: .5em 1em;
+      padding: 0.5em 1em;
       background-color: #ddd;
-      border-radius: .5em;
+      border-radius: 0.5em;
     }
-
-    :not(pre)>code {
+    :not(pre) > code {
       background-color: #eee;
-      padding: .3em .5em;
-      border-radius: .3em;
+      padding: 0.3em 0.5em;
+      border-radius: 0.3em;
     }
-
     summary {
       background-color: #eee;
-      padding: .3em .8em;
-      border-radius: .5em;
+      padding: 0.3em 0.8em;
+      border-radius: 0.5em;
       cursor: pointer;
-      transition: background-color .2s ease-in-out;
-
+      transition: background-color 0.2s ease-in-out;
       &:hover {
         background-color: #ddd;
       }

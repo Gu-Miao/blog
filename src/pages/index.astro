@@ -1,6 +1,6 @@
 ---
 import dayjs from 'dayjs'
-import Basic from "@/layouts/Basic.astro"
+import Basic from '@/layouts/Basic.astro'
 import { Frontmatter } from '@/common/types'
 import { DESCRIPTION, TITLE } from '@/common/constants'
 
@@ -21,14 +21,20 @@ const sortedPosts = posts.sort((p1, p2) => {
       <h1 class="title">{TITLE}</h1>
       <h2 class="description">{DESCRIPTION}</h2>
       <ul class="posts">
-        {sortedPosts.map((post)=><li>
-          <h3>
-            <a href={post.url}>{post.frontmatter.title}</a>
-          </h3>
-          <p>{post.frontmatter.description}</p>
-          <p>{post.frontmatter.tags.map(tag=><span class="tag">{tag}</span>)}</p>
-          <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
-        </li>)}
+        {sortedPosts.map(post => (
+          <li>
+            <h3>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </h3>
+            <p>{post.frontmatter.description}</p>
+            <p>
+              {post.frontmatter.tags.map(tag => (
+                <span class="tag">{tag}</span>
+              ))}
+            </p>
+            <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
+          </li>
+        ))}
       </ul>
     </div>
   </div>
@@ -36,35 +42,28 @@ const sortedPosts = posts.sort((p1, p2) => {
 
 <style lang="less">
   .home {
-
     padding: 2em;
     background-color: #eee;
-
     .container {
       position: relative;
       max-width: 960px;
       margin: 0 auto;
     }
-
     .links {
       position: absolute;
       top: 1em;
       right: 1em;
-
       a {
-        margin-right: .5em;
-
+        margin-right: 0.5em;
         &:last-child {
           margin-right: 0;
         }
       }
     }
-
     .title {
       font-family: '楷体';
       font-size: 2.5em;
     }
-
     .description {
       margin-top: -1.4em;
       font-family: '楷体';
@@ -72,31 +71,26 @@ const sortedPosts = posts.sort((p1, p2) => {
       font-weight: bold;
       color: #666;
     }
-
     .posts {
       margin-top: 2.5em;
       padding-left: 0;
       list-style: none;
-
       li {
         margin-bottom: 1.5em;
       }
     }
-
     .tag {
       display: inline-block;
-      margin-right: .5em;
-      padding: .25em .7em;
+      margin-right: 0.5em;
+      padding: 0.25em 0.7em;
       background: #0ae;
       color: white;
-      font-size: .8em;
-      border-radius: .25em;
-
+      font-size: 0.8em;
+      border-radius: 0.25em;
       &:last-child {
         margin-right: 0;
       }
     }
-
     .time {
       font-size: 1rem;
       font-weight: normal;
