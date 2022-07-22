@@ -15,7 +15,7 @@ serials: type-challenges 类型挑战系列
 
 # type-challenges 类型挑战系列【二】
 
-[type-challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md)type-challenges 意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
+[type-challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md) 意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
 
 > 本篇内容全部为**中等**难度。
 
