@@ -11,7 +11,9 @@ interface SearchProps {
 const Search: Component<SearchProps> = props => {
   const [value, setValue] = createSignal('')
   const filterdPosts = () =>
-    props.posts.filter(post => post.frontmatter.title.toLowerCase().includes(value().toLowerCase()))
+    props.posts.filter(post =>
+      post.frontmatter.title.toLowerCase().includes(value().trim().toLowerCase()),
+    )
 
   return (
     <div class="post-list">
