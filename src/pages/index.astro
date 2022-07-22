@@ -1,4 +1,5 @@
 ---
+import PostList from '@/components/PostList'
 import dayjs from 'dayjs'
 import Basic from '@/layouts/Basic.astro'
 import { Frontmatter } from '@/common/types'
@@ -20,22 +21,7 @@ const sortedPosts = posts.sort((p1, p2) => {
       </div>
       <h1 class="title">{TITLE}</h1>
       <h2 class="description">{DESCRIPTION}</h2>
-      <ul class="posts">
-        {sortedPosts.map(post => (
-          <li>
-            <h3>
-              <a href={post.url}>{post.frontmatter.title}</a>
-            </h3>
-            <p>{post.frontmatter.description}</p>
-            <p>
-              {post.frontmatter.tags.map(tag => (
-                <span class="tag">{tag}</span>
-              ))}
-            </p>
-            <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
-          </li>
-        ))}
-      </ul>
+      <PostList client:idle posts={sortedPosts} />
     </div>
   </div>
 </Basic>
@@ -69,31 +55,6 @@ const sortedPosts = posts.sort((p1, p2) => {
       font-family: '楷体';
       font-size: 1.2em;
       font-weight: bold;
-      color: #666;
-    }
-    .posts {
-      margin-top: 2.5em;
-      padding-left: 0;
-      list-style: none;
-      li {
-        margin-bottom: 1.5em;
-      }
-    }
-    .tag {
-      display: inline-block;
-      margin-right: 0.5em;
-      padding: 0.25em 0.7em;
-      background: #0ae;
-      color: white;
-      font-size: 0.8em;
-      border-radius: 0.25em;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    .time {
-      font-size: 1rem;
-      font-weight: normal;
       color: #666;
     }
   }

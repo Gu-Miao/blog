@@ -117,6 +117,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/solid-js@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@astrojs/solid-js@npm:0.4.1"
+  dependencies:
+    babel-preset-solid: ^1.4.2
+  peerDependencies:
+    solid-js: ^1.4.3
+  checksum: 9d1c8c1d324c44daa825634ddb51ca73f22abfd3ab4c238b50bbd2ccbb43ba518f9356160565f60be83b27af9734f068abc80b584ca68ab9ad8c9f2d01ca4504
+  languageName: node
+  linkType: hard
+
 "@astrojs/telemetry@npm:^0.4.1":
   version: 0.4.1
   resolution: "@astrojs/telemetry@npm:0.4.1"
@@ -241,6 +252,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-module-imports@npm:7.16.0":
+  version: 7.16.0
+  resolution: "@babel/helper-module-imports@npm:7.16.0"
+  dependencies:
+    "@babel/types": ^7.16.0
+  checksum: 8e1eb9ac39440e52080b87c78d8d318e7c93658bdd0f3ce0019c908de88cbddafdc241f392898c0b0ba81fc52c8c6d2f9cc1b163ac5ed2a474d49b11646b7516
+  languageName: node
+  linkType: hard
+
 "@babel/helper-module-imports@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/helper-module-imports@npm:7.18.6"
@@ -336,7 +356,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-jsx@npm:^7.18.6":
+"@babel/plugin-syntax-jsx@npm:^7.16.5, @babel/plugin-syntax-jsx@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/plugin-syntax-jsx@npm:7.18.6"
   dependencies:
@@ -388,6 +408,16 @@ __metadata:
     debug: ^4.1.0
     globals: ^11.1.0
   checksum: c406e01f45f13a666083f6e4ea32d2d5e20ce3a51ea48f6c8fe9d6a0469069f857af06866749959c4396f191393e39e7e6e7b2a8769afca7f50ca1046d6172bd
+  languageName: node
+  linkType: hard
+
+"@babel/types@npm:^7.16.0":
+  version: 7.18.9
+  resolution: "@babel/types@npm:7.18.9"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.18.6
+    to-fast-properties: ^2.0.0
+  checksum: f0e0147267895fd8a5b82133e711ce7ce99941f3ce63647e0e3b00656a7afe48a8aa48edbae27543b701794d2b29a562a08f51f88f41df401abce7c3acc5e13a
   languageName: node
   linkType: hard
 
@@ -973,6 +1003,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-jsx-dom-expressions@npm:^0.33.12":
+  version: 0.33.12
+  resolution: "babel-plugin-jsx-dom-expressions@npm:0.33.12"
+  dependencies:
+    "@babel/helper-module-imports": 7.16.0
+    "@babel/plugin-syntax-jsx": ^7.16.5
+    "@babel/types": ^7.16.0
+    html-entities: 2.3.2
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: db5506058f7f3ab97a830fa6f8338334ab5ce06eb3b6ab04545f1bdb59a20cd64f1eea6417e7b239177d1e0433dce81e88451405b26660458675dc206899bd89
+  languageName: node
+  linkType: hard
+
+"babel-preset-solid@npm:^1.4.2":
+  version: 1.4.6
+  resolution: "babel-preset-solid@npm:1.4.6"
+  dependencies:
+    babel-plugin-jsx-dom-expressions: ^0.33.12
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: d7eb6da1f4cab8ea80686bd847c6703caff5a13e7eae91d40b16448001cd93d4ed5b875041814110695461660a0c241a4fb874606f4c223c9602bb917d7429cf
+  languageName: node
+  linkType: hard
+
 "bail@npm:^2.0.0":
   version: 2.0.2
   resolution: "bail@npm:2.0.2"
@@ -1011,11 +1066,13 @@ __metadata:
   dependencies:
     "@astrojs/rss": ^0.2.2
     "@astrojs/sitemap": ^0.2.6
+    "@astrojs/solid-js": ^0.4.1
     astro: ^1.0.0-beta.73
     dayjs: ^1.11.4
     less: ^4.1.3
     prettier: ^2.7.1
     prettier-plugin-astro: ^0.1.2
+    solid-js: ^1.4.7
   languageName: unknown
   linkType: soft
 
@@ -2386,6 +2443,13 @@ __metadata:
     property-information: ^6.0.0
     space-separated-tokens: ^2.0.0
   checksum: ee33aff714b12f9f83049550956c7fb3e5ac7bdd20e77b57dc01b66de06e8bb0b3ba24153d4b6a1d7fa660bfef91125ac29e1bb04fb628e30d11097d28037235
+  languageName: node
+  linkType: hard
+
+"html-entities@npm:2.3.2":
+  version: 2.3.2
+  resolution: "html-entities@npm:2.3.2"
+  checksum: 522d8d202df301ff51b517a379e642023ed5c81ea9fb5674ffad88cff386165733d00b6089d5c2fcc644e44777d6072017b6216d8fa40f271d3610420d00a886
   languageName: node
   linkType: hard
 
@@ -4773,6 +4837,13 @@ __metadata:
     ip: ^1.1.5
     smart-buffer: ^4.2.0
   checksum: dd9194293059d737759d5c69273850ad4149f448426249325c4bea0e340d1cf3d266c3b022694b0dcf5d31f759de23657244c481fc1e8322add80b7985c36b5e
+  languageName: node
+  linkType: hard
+
+"solid-js@npm:^1.4.7":
+  version: 1.4.7
+  resolution: "solid-js@npm:1.4.7"
+  checksum: 7cd5d5674a13955854cf806880ec353ae83efb6e53ccf8903e7581c3c31c25cdb2ee797efd0bbd930d0dd2d32e0b08ba81ba4befab821b1a09ba33063a4a496a
   languageName: node
   linkType: hard
 

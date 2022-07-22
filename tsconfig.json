@@ -3,8 +3,11 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "types": ["astro/client"],
     "baseUrl": "./",
     "paths": {
