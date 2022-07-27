@@ -1,7 +1,10 @@
 ---
 layout: '@/layouts/Post.astro'
 title: type-challenges 类型挑战系列【一】
-description: type-challenges 意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
+abstract: type-challenges 意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
+author:
+  name: 光舞
+  link: https://github.com/Gu-Miao
 image: /images/type-changes.webp
 createdAt: '2022-07-20'
 updatedAt: '2022-07-22'
@@ -9,11 +12,8 @@ category: typescript
 tags:
   - typescript
   - type-challenges
-  - 转载
 serials: type-challenges 类型挑战系列
 ---
-
-# type-challenges 类型挑战系列【一】
 
 [type-challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md) 意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
 

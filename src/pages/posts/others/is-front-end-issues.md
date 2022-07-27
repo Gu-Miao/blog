@@ -1,22 +1,21 @@
 ---
 layout: '@/layouts/Post.astro'
-title: 前端进度不理想，线上bug源源不断，是否存在前端问题
-description: 前端进度不理想，线上bug源源不断；程序代码堆成了屎山，引起了问题新花样不断。
+title: 前端进度不理想，线上 bug 源源不断，是否存在前端问题
+abstract: 前端进度不理想，线上bug源源不断；程序代码堆成了屎山，引起了问题新花样不断。
+author:
+  name: 逐步前行
+  link: https://juejin.cn/user/4195392104696519
 image: /images/is-front-end-issues.webp
-createdAt: '2022-07-26'
+createdAt: '2022-07-06'
 updatedAt: '2022-07-26'
 category: 杂篇
 tags:
   - 杂篇
   - 转载
+reprint:
+  description: 掘金
+  link: https://juejin.cn/post/7117059077561122846
 ---
-
-# 前端进度不理想，线上 bug 源源不断，是否存在前端问题
-
-- 转载自[掘金](https://juejin.cn/post/7117059077561122846)
-- 作者：[逐步前行](https://juejin.cn/user/4195392104696519)
-
-<img src="/images/is-front-end-issues.webp" alt="前端进度不理想，线上 bug 源源不断，是否存在前端问题" style="width: 100%; border-radius: .5em;"/>
 
 ## 前言
 

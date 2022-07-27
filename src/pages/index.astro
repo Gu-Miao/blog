@@ -8,7 +8,7 @@ import { DESCRIPTION, TITLE } from '@/common/constants'
 const canonicalURL = Astro.canonicalURL
 const posts = await Astro.glob<Frontmatter>('./**/*.md')
 const sortedPosts = posts.sort((p1, p2) => {
-  return dayjs(p2.frontmatter.createdAt).unix() - dayjs(p1.frontmatter.createdAt).unix()
+  return dayjs(p2.frontmatter.updatedAt).unix() - dayjs(p1.frontmatter.updatedAt).unix()
 })
 ---
 

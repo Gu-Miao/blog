@@ -1,17 +1,21 @@
 ---
 layout: '@/layouts/Post.astro'
 title: 提问的智慧
-description: 在黑客的世界里，当你拋出一个技术问题时，最终是否能得到有用的回答，往往取决于你所提问和追问的方式。本指南将教你如何正确的提问以获得你满意的答案。
+abstract: 在黑客的世界里，当你拋出一个技术问题时，最终是否能得到有用的回答，往往取决于你所提问和追问的方式。本指南将教你如何正确的提问以获得你满意的答案。
+author:
+  name: Ryan Wu
+  link: https://github.com/ryanhanwu
 image: /images/smart-questions.webp
-createdAt: '2022-07-15'
-updatedAt: '2022-07-15'
+createdAt: '2022-07-17'
+updatedAt: '2022-07-27'
 category: 杂篇
 tags:
   - 杂篇
   - 转载
+reprint:
+  description: 提问的智慧
+  link: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 ---
-
-# 提问的智慧
 
 Copyright © 2001,2006,2014 Eric S. Raymond, Rick Moen
 
