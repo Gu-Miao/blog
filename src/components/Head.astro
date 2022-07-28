@@ -11,9 +11,7 @@ export interface Props {
 
 const { title, description = DESCRIPTION, image, tags = [], canonicalURL } = Astro.props as Props
 const wholeTitle = `${TITLE}${title ? ` | ${title}` : ''}`
-const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', '光舞', '博客', 'blog', 'astro', 'vercel'].concat(
-  tags,
-)
+const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', '光舞', '光舞的博客', 'guangwublog'].concat(tags)
 ---
 
 <head>
