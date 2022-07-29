@@ -1,5 +1,6 @@
 import { Component, createSignal, For } from 'solid-js'
 import dayjs from 'dayjs'
+import { debounce } from 'lodash-es'
 import { MarkdownInstance } from 'astro'
 import { Frontmatter } from '@/common/types'
 import './index.less'
@@ -20,10 +21,7 @@ const Search: Component<SearchProps> = props => {
       <input
         type="text"
         value={value()}
-        onInput={e => {
-          console.log(12123)
-          setValue(e.currentTarget.value)
-        }}
+        onInput={debounce(e => setValue(e.target.value))}
         placeholder="在此搜索..."
       />
       <ul>
@@ -33,7 +31,7 @@ const Search: Component<SearchProps> = props => {
               <h3>
                 <a href={post.url}>{post.frontmatter.title}</a>
               </h3>
-              <p>{post.frontmatter.description}</p>
+              <p>{post.frontmatter.abstract}</p>
               <p>
                 {post.frontmatter.tags.map(tag => (
                   <span class="tag">{tag}</span>
