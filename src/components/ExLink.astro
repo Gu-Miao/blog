@@ -1,0 +1,9 @@
+---
+export interface ExLinkProps {
+  href: string
+}
+
+const { href } = Astro.props as ExLinkProps
+---
+
+<a href={href} target="_blank" rel="external nofollow noopener noreferrer"><slot /></a>

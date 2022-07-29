@@ -1,5 +1,6 @@
 ---
 import Basic from './Basic.astro'
+import ExLink from '@/components/ExLink.astro'
 import { Frontmatter } from '@/common/types'
 import { formatDate } from '@/utils/utils'
 
@@ -8,7 +9,7 @@ interface Props {
 }
 
 const { content } = Astro.props as Props
-const canonicalURL = Astro.canonicalURL
+const canonicalURL = Astro.url
 ---
 
 <Basic {canonicalURL} {...content}>
@@ -24,13 +25,15 @@ const canonicalURL = Astro.canonicalURL
     <div class="container">
       <h1 id={content.title}>{content.title}</h1>
       <ul class="info">
-        <li>作者：<a href={content.author.link}>{content.author.name}</a></li>
+        <li>
+          作者：<ExLink href={content.author.link}>{content.author.name}</ExLink>
+        </li>
         <li>创建于 {formatDate(content.createdAt)}，最后更新于 {formatDate(content.updatedAt)}</li>
         <li>标签：{content.tags.toString()}</li>
         {content.serials && <li>所属系列：{content.serials}</li>}
         {content.reprint && (
           <li>
-            转载自<a href={content.reprint.link}>{content.reprint.description}</a>
+            转载自<ExLink href={content.reprint.link}>{content.reprint.description}</ExLink>
           </li>
         )}
       </ul>

@@ -5,7 +5,7 @@ import Basic from '@/layouts/Basic.astro'
 import { Frontmatter } from '@/common/types'
 import { DESCRIPTION, TITLE } from '@/common/constants'
 
-const canonicalURL = Astro.canonicalURL
+const canonicalURL = Astro.url
 const posts = await Astro.glob<Frontmatter>('./**/*.md')
 const sortedPosts = posts.sort((p1, p2) => {
   return dayjs(p2.frontmatter.updatedAt).unix() - dayjs(p1.frontmatter.updatedAt).unix()

@@ -1,7 +1,7 @@
 ---
 import { TITLE, DESCRIPTION } from '@/common/constants'
 
-export interface Props {
+export interface HeadProps {
   title?: string
   description?: string
   image?: string
@@ -9,7 +9,13 @@ export interface Props {
   canonicalURL?: string | URL
 }
 
-const { title, description = DESCRIPTION, image, tags = [], canonicalURL } = Astro.props as Props
+const {
+  title,
+  description = DESCRIPTION,
+  image,
+  tags = [],
+  canonicalURL,
+} = Astro.props as HeadProps
 const wholeTitle = `${TITLE}${title ? ` | ${title}` : ''}`
 const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', '光舞', '光舞的博客', 'guangwublog'].concat(tags)
 ---

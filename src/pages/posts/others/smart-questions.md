@@ -31,7 +31,7 @@ Copyleft 2001 by D.H.Grand(nOBODY/Ginux), 2010 by Gasolin, 2015 by Ryan Wu
 
 本文另有[繁體中文版](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README.md)。
 
-## [原文版本历史](history.md)
+## [原文版本历史](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/history.md)
 
 ## 声明
 
