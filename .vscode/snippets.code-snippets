@@ -43,7 +43,7 @@
   "acceptChallenges": {
     "scope": "markdown",
     "prefix": "acceptChallengesSnippet",
-    "body": "<p><a href=\"https://tsch.js.org/$1/play/zh-CN\" target=\"_blank\"><img width=\"100\" src=\"https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white\" alt=\"接受挑战\"/></a></p>$0"
+    "body": "[<img width=\"100\" src=\"https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white\" alt=\"接受挑战\"/>](https://tsch.js.org/$1/play/zh-CN)$0"
   },
   "details": {
     "scope": "markdown",
