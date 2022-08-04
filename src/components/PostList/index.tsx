@@ -37,7 +37,7 @@ const Search: Component<SearchProps> = props => {
                   <span class="tag">{tag}</span>
                 ))}
               </p>
-              <p class="time">{dayjs(post.frontmatter.createdAt).format('YYYY年M月D日')}</p>
+              <p class="time">{dayjs(post.frontmatter.updatedAt).format('YYYY年M月D日')}</p>
             </li>
           )}
         </For>
