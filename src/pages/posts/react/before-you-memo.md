@@ -29,7 +29,7 @@ reprint:
 
 ## 一个（人工）减缓的组件
 
-这里是一个具有严重渲染性能问题的组件
+这里是一个具有严重渲染性能问题的组件：
 
 ```jsx
 import { useState } from 'react'
@@ -125,10 +125,7 @@ _[在这里试试](https://codesandbox.io/s/bold-dust-0jbg7?file=/src/App.js:58-
 
 现在看起来我们似乎没办法再将不使用 `color` 的部分提取到另一个组件中了，因为这部分代码会首先包含父组件的 `div`，然后才包含 `<ExpensiveTree />`。这时候无法避免使用 `memo` 了，对吗？又或者，我们也有办法避免？
 
-在沙盒中玩玩吧，然后看看你是否可以解决。
-...
-
-...
+在沙盒中试试看吧，然后看看你是否可以解决。
 
 ...
 
@@ -182,4 +179,4 @@ _[在这里试试](https://codesandbox.io/s/wonderful-banach-tyfr1?file=/src/App
 
 [大概是的吧](https://kentcdodds.com/blog/optimize-react-re-renders)
 
-这并不是一个新想法。这只是一个 React 组合模型的自然结果。它太简单了以至于得不到赏识，然而它值得更多的爱。
+这并不是一个新想法。这只是一个 React 组合模型的自然结果。它太简单了以至于得不到赏识，然而它值得更多的关注。
