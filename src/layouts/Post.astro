@@ -66,8 +66,8 @@ const canonicalURL = Astro.url
         border-radius: 0;
         padding: 1.5em 0.8em;
         & > pre {
-          margin-left: -1.5em;
-          margin-right: -1.5em;
+          margin-left: -0.8em;
+          margin-right: -0.8em;
           border-radius: 0;
           padding: 1.2em 2em;
         }
@@ -116,7 +116,6 @@ const canonicalURL = Astro.url
     details {
       padding: 0.5em 0.5em 0;
       border-radius: 0.5em;
-      overflow: hidden;
       background-color: #eee;
       &[open] {
         padding: 0.5em;
@@ -127,6 +126,8 @@ const canonicalURL = Astro.url
       }
     }
     summary {
+      border-top-left-radius: 0.5em;
+      border-top-right-radius: 0.5em;
       margin: -0.5em -0.5em 0;
       padding: 0.5em;
       font-weight: bold;
