@@ -127,9 +127,13 @@ const canonicalURL = Astro.url
           margin-bottom: @p;
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
+          background-color: #ddd;
         }
         & > *:last-child {
           margin-bottom: 0;
+        }
+        :not(pre) > code {
+          background-color: #ddd;
         }
       }
       summary {
