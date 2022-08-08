@@ -1,8 +1,7 @@
 {
   "name": "blog",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "start": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview"
   },
