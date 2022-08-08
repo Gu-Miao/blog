@@ -62,14 +62,15 @@ const canonicalURL = Astro.url
         padding: 0;
       }
       .container {
+        @p: .75em;
         margin: 0;
         border-radius: 0;
-        padding: 1.5em 0.8em;
+        padding: 1.5em @p;
         & > pre {
-          margin-left: -0.8em;
-          margin-right: -0.8em;
+          margin-left: -@p;
+          margin-right: -@p;
           border-radius: 0;
-          padding: 1.2em 2em;
+          padding: 1.2em @p;
         }
       }
     }
@@ -114,27 +115,58 @@ const canonicalURL = Astro.url
       background-color: #eee;
     }
     details {
-      padding: 0.5em 0.5em 0;
-      border-radius: 0.5em;
+      @p: .8em;
+      @br: .5em;
+      padding: @p;
+      padding-bottom: 0;
+      border-radius: @br;
       background-color: #eee;
       &[open] {
-        padding: 0.5em;
-
+        padding-bottom: @p;
         summary {
-          margin-bottom: 0.5em;
+          margin-bottom: @p;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        & > *:last-child {
+          margin-bottom: 0;
         }
       }
-    }
-    summary {
-      border-top-left-radius: 0.5em;
-      border-top-right-radius: 0.5em;
-      margin: -0.5em -0.5em 0;
-      padding: 0.5em;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.2s ease-in-out;
-      &:hover {
-        background-color: #ddd;
+      summary {
+        border-radius: @br;
+        margin: -@p;
+        margin-bottom: 0;
+        padding: 0.5em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+          background-color: #ddd;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        @p: .5em;
+        & {
+          padding: @p;
+          padding-bottom: 0;
+          margin-left: -(@p / 1.5);
+          margin-right: -(@p / 1.5);
+        }
+        &[open] {
+          padding-bottom: @p;
+          summary {
+            margin-bottom: @p;
+          }
+        }
+        summary {
+          margin: -@p;
+          margin-bottom: 0;
+        }
+        pre {
+          margin-left: -@p;
+          margin-right: -@p;
+          border-radius: 0;
+        }
       }
     }
   }

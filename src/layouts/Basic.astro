@@ -10,18 +10,20 @@ const props = Astro.props as HeadProps
     <slot name="head" />
   </Head>
   <style is:global lang="less">
-    @size: 8px;
-    ::-webkit-scrollbar {
-      width: @size;
-      height: @size;
-    }
-    ::-webkit-scrollbar-track {
-      border-radius: @size;
-      background: #eee;
-    }
-    ::-webkit-scrollbar-thumb {
-      border-radius: @size;
-      background: #bbb;
+    @media screen and (min-width: 720px) {
+      @size: 8px;
+      ::-webkit-scrollbar {
+        width: @size;
+        height: @size;
+      }
+      ::-webkit-scrollbar-track {
+        border-radius: @size;
+        background: #eee;
+      }
+      ::-webkit-scrollbar-thumb {
+        border-radius: @size;
+        background: #bbb;
+      }
     }
     :root {
       font-size: 20px;
