@@ -7,7 +7,7 @@ author:
   link: https://github.com/Gu-Miao
 image: /images/type-changes.webp
 createdAt: '2022-07-21'
-updatedAt: '2022-07-22'
+updatedAt: '2022-08-08'
 category: typescript
 tags:
   - typescript
@@ -346,11 +346,30 @@ type LookUp<T extends { type: string; [key: string]: any }, U extends T['type']>
     : never
   : never
 
-type LookUp<U extends { type: any }, T extends U['type']> = U extends { type: T } ? U : never
-
-type LookUp<U, T> = U extends { type: T } ? U : never
+type LookUp<U extends { type: string }, T extends U['type']> = U extends { type: T } ? U : never
 
 type LookUp<U, T> = Extract<U, { type: T }>
+```
+
+这里主要借助 typescript 中的[分离联合类型](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#distributive-conditional-types)来实现。
+
+在 typescript 中，当一个联合类型进参与判断时，如：`A extends B`，`A` 和 `B` 都是联合类型，必须令 `A` 中所有的子类型都在联合类型 `B` 中存在，才能满足条件。
+
+但是，如果 `A` 是一个泛型，那么 typescript 也不清楚是否满足条件，于是他就对 `A` 中的每一项进行判断，再把结果转为联合类型：
+
+```ts
+type xyz = 'x' | 'y' | 'z'
+type IsX<T> = T extends 'x' ? true : T
+
+type result = IsX<xyz> // true | 'y' | 'z'
+```
+
+对于本题，我们就可以用 `U extends { type: T }` 结合联合类型会将 `never` 剔除的特性来实现。
+
+不过需要注意的是，不能使用 `U` 的属性，或用数组等将其包裹，这样是行不通的：
+
+```ts
+U['type'] extends T // U['type'] 是 'cat' | 'dog'，不会触发分离联合类型
 ```
 
 </details>
@@ -551,7 +570,5 @@ type Permutation<U, C = U> = [U] extends [never]
   ? [U, ...Permutation<Exclude<C, U>>]
   : never
 ```
-
----
 
 </details>
