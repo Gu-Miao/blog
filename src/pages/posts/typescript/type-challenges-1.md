@@ -5,7 +5,7 @@ abstract: type-challenges 意在于让你更好的了解 TS 的类型系统，�
 author:
   name: 光舞
   link: https://github.com/Gu-Miao
-image: /images/type-changes.webp
+image: /images/type-challenges-1.webp
 createdAt: '2022-07-20'
 updatedAt: '2022-07-22'
 category: typescript
