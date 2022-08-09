@@ -7,7 +7,7 @@ author:
   link: https://github.com/ryanhanwu
 image: /images/smart-questions.webp
 createdAt: '2022-07-17'
-updatedAt: '2022-07-27'
+updatedAt: '2022-08-09'
 category: 杂篇
 tags:
   - 杂篇
@@ -65,7 +65,7 @@ Copyleft 2001 by D.H.Grand(nOBODY/Ginux), 2010 by Gasolin, 2015 by Ryan Wu
 
 如果你决定向我们求助，当然你也不希望被视为失败者，更不愿成为失败者中的一员。能立刻得到快速并有效答案的最好方法，就是像赢家那样提问 —— 聪明、自信、有解决问题的思路，只是偶尔在特定的问题上需要获得一点帮助。
 
-（欢迎对本指南提出改进意见。你可以 email 你的建议至 [esr@thyrsus.com](esr@thyrsus.com) 或 [respond-auto@linuxmafia.com](respond-auto@linuxmafia.com)。然而请注意，本文并非[网络礼节](http://www.ietf.org/rfc/rfc1855.txt)的通用指南，而我们通常会拒绝无助于在技术论坛得到有用答案的建议）。
+（欢迎对本指南提出改进意见。你可以 email 你的建议至 [esr@thyrsus.com](mailto:esr@thyrsus.com) 或 [respond-auto@linuxmafia.com](mailto:respond-auto@linuxmafia.com)。然而请注意，本文并非[网络礼节](http://www.ietf.org/rfc/rfc1855.txt)的通用指南，而我们通常会拒绝无助于在技术论坛得到有用答案的建议）。
 
 ## 在提问之前
 
@@ -191,7 +191,7 @@ Stack Exchange 已经成长到[超过一百个网站](https://stackexchange.com/
 
 在论坛，要求通过电子邮件回复是非常无礼的，除非你认为回复的信息可能比较敏感（有人会为了某些未知的原因，只让你而不是整个论坛知道答案）。如果你只是想在有人回复讨论串时得到电子邮件提醒，可以要求网页论坛发送给你。几乎所有论坛都支持诸如`追踪此讨论串`、`有回复时发送邮件提醒`等功能。
 
-### <a name="使用清晰、正确、精准且合乎语法的语句">使用清晰、正确、精准且合乎语法的语句</a>
+### 使用清晰、正确、精准且合乎语法的语句
 
 我们从经验中发现，粗心的提问者通常也会粗心地写程序与思考（我敢打包票）。回答粗心大意者的问题很不值得，我们宁愿把时间耗在别处。
 
