@@ -6,8 +6,8 @@ author:
   name: 光舞
   link: https://github.com/Gu-Miao
 image: /images/type-challenges-2.webp
-createdAt: '2022-07-21'
-updatedAt: '2022-08-08'
+createdAt: '2022-07-21 09:00'
+updatedAt: '2022-08-08 09:00'
 category: typescript
 tags:
   - typescript

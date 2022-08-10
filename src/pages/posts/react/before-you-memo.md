@@ -6,8 +6,8 @@ author:
   name: Dan Abramov
   link: https://github.com/gaearon
 image: /images/before-you-memo.webp
-createdAt: '2021-02-23'
-updatedAt: '2022-08-04'
+createdAt: '2021-02-23 09:00'
+updatedAt: '2022-08-04 09:00'
 category: react
 tags:
   - react

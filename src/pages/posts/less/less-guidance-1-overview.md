@@ -6,8 +6,8 @@ author:
   name: 光舞
   link: https://github.com/Gu-Miao
 image: /images/less-gudiance-1-overview.webp
-createdAt: '2022-07-15'
-updatedAt: '2022-07-15'
+createdAt: '2022-07-15 09:00'
+updatedAt: '2022-07-15 09:00'
 category: less
 tags:
   - css

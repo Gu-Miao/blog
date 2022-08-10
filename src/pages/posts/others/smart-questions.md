@@ -6,8 +6,8 @@ author:
   name: Ryan Wu
   link: https://github.com/ryanhanwu
 image: /images/smart-questions.webp
-createdAt: '2022-07-17'
-updatedAt: '2022-08-09'
+createdAt: '2022-07-17 09:00'
+updatedAt: '2022-08-09 09:00'
 category: 杂篇
 tags:
   - 杂篇
