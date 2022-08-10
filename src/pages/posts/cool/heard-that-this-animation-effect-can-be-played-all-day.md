@@ -581,6 +581,8 @@ function ThemeChange(bol) {
 
 ## 博主注
 
+[在线预览地址](https://code.juejin.cn/pen/7125704360088535048)
+
 1. 滑块动画可以使用 `transform: translateX()` 来代替 `left` 避免回流。
 2. 可以使用 `animation-delay` 代替定时器来实现按钮动画的延迟。
 3. 可以通过监听 `transitionend` 代替定时器来实现容器动画结束后回复到原本样式的效果。
