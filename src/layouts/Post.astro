@@ -1,11 +1,12 @@
 ---
 import Basic from './Basic.astro'
 import ExLink from '@/components/ExLink.astro'
+import { MarkdownContent } from 'astro'
 import { Frontmatter } from '@/common/types'
 import { formatDate } from '@/utils/utils'
 
 interface Props {
-  content: Frontmatter
+  content: MarkdownContent<Frontmatter>
 }
 
 const { content } = Astro.props as Props
