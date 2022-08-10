@@ -10,7 +10,7 @@ createdAt: '2022-07-21 09:00'
 updatedAt: '2022-08-08 09:00'
 category: typescript
 tags:
-  - typescript
+  - TypeScript
   - type-challenges
 serials: type-challenges 类型挑战系列
 ---

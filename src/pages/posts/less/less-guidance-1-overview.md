@@ -10,8 +10,8 @@ createdAt: '2022-07-15 09:00'
 updatedAt: '2022-07-15 09:00'
 category: less
 tags:
-  - css
-  - less
+  - CSS
+  - Less
 serials: Less 教程
 ---
 
