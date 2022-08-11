@@ -1,4 +1,4 @@
-import { Component, createSignal, For } from 'solid-js'
+import { Component, createSignal, Switch, Match, For } from 'solid-js'
 import dayjs from 'dayjs'
 import { debounce } from 'lodash-es'
 import { MarkdownInstance } from 'astro'
@@ -24,24 +24,30 @@ const Search: Component<SearchProps> = props => {
         onInput={debounce(e => setValue(e.target.value))}
         placeholder="在此搜索..."
       />
-      <ul>
-        <For each={filterdPosts()}>
-          {post => (
-            <li>
-              <h3>
-                <a href={post.url}>{post.frontmatter.title}</a>
-              </h3>
-              <p>{post.frontmatter.abstract}</p>
-              <p>
-                {post.frontmatter.tags.map(tag => (
-                  <span class="tag">{tag}</span>
-                ))}
-              </p>
-              <p class="time">{dayjs(post.frontmatter.updatedAt).format('YYYY年M月D日')}</p>
-            </li>
-          )}
-        </For>
-      </ul>
+      <Switch fallback={<p style={{ 'text-align': 'center', padding: '5em 0' }}>未匹配到文章</p>}>
+        <Match when={filterdPosts().length > 0}>
+          <ul>
+            <For each={filterdPosts()}>
+              {post => {
+                return (
+                  <li>
+                    <h3>
+                      <a href={post.url}>{post.frontmatter.title}</a>
+                    </h3>
+                    <p>{post.frontmatter.abstract}</p>
+                    <p>
+                      <For each={post.frontmatter.tags}>
+                        {tag => <span class="tag">{tag}</span>}
+                      </For>
+                    </p>
+                    <p class="time">{dayjs(post.frontmatter.updatedAt).format('YYYY年M月D日')}</p>
+                  </li>
+                )
+              }}
+            </For>
+          </ul>
+        </Match>
+      </Switch>
     </div>
   )
 }
