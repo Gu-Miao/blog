@@ -30,7 +30,9 @@ const canonicalURL = Astro.url
           作者：<ExLink href={content.author.link}>{content.author.name}</ExLink>
         </li>
         <li>创建于 {formatDate(content.createdAt)}，最后更新于 {formatDate(content.updatedAt)}</li>
-        <li>标签：{content.tags.toString()}</li>
+        <li class="tag-container">
+          标签：{content.tags.map(tag => <span class="tag">{tag}</span>)}
+        </li>
         {content.serials && <li>所属系列：{content.serials}</li>}
         {content.reprint && (
           <li>
@@ -78,6 +80,17 @@ const canonicalURL = Astro.url
     .info {
       font-size: 0.8em;
       color: #666;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      background-color: #32abf1;
+      color: white;
+      font-size: 0.85em;
+      border-radius: 0.3em;
+      &:not(:last-child) {
+        margin-right: 0.3em;
+      }
     }
     .banner {
       display: block;
