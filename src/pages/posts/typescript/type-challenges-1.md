@@ -7,7 +7,7 @@ author:
   link: https://github.com/Gu-Miao
 image: /images/type-challenges-1.webp
 createdAt: '2022-07-20 09:00'
-updatedAt: '2022-07-22 09:00'
+updatedAt: '2022-08-15 16:25'
 category: typescript
 tags:
   - TypeScript
@@ -42,7 +42,7 @@ const todo: TodoPreview = {
 }
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/4/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/4/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -80,7 +80,7 @@ todo.title = 'Hello' // Error: cannot reassign a readonly property
 todo.description = 'barFoo' // Error: cannot reassign a readonly property
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/7/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/7/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -105,7 +105,7 @@ const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
 type result = TupleToObject<typeof tuple> // expected { tesla: 'tesla', 'model 3': 'model 3', 'model X': 'model X', 'model Y': 'model Y'}
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/11/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/11/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -132,7 +132,7 @@ type head1 = First<arr1> // expected to be 'a'
 type head2 = First<arr2> // expected to be 3
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/14/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/14/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -157,7 +157,7 @@ type teslaLength = Length<tesla> // expected 4
 type spaceXLength = Length<spaceX> // expected 5
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/18/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/18/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -180,7 +180,7 @@ type Length<T extends readonly any[]> = T['length']
 type Result = MyExclude<'a' | 'b' | 'c', 'a'> // 'b' | 'c'
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/43/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/43/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -203,7 +203,7 @@ type ExampleType = Promise<string>
 type Result = MyAwaited<ExampleType> // string
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/189/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/189/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -225,7 +225,7 @@ type A = If<true, 'a', 'b'> // expected to be 'a'
 type B = If<false, 'a', 'b'> // expected to be 'b'
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/268/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/268/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -246,7 +246,7 @@ type If<C extends boolean, T, F> = C extends true ? T : F
 type Result = Concat<[1], [2]> // expected to be [1, 2]
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/533/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/533/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -267,7 +267,7 @@ type Concat<T extends any[], U extends any[]> = [...T, ...U]
 type isPillarMen = Includes<['Kars', 'Esidisi', 'Wamuu', 'Santana'], 'Dio'> // expected to be `false`
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/898/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/898/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -296,7 +296,7 @@ type Includes<T extends readonly any[], U> = T extends [infer F, ...infer Rest]
 type Result = Push<[1, 2], '3'> // [1, 2, '3']
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/3057/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/3057/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -317,7 +317,7 @@ type Push<T extends any[], U> = [...T, U]
 type Result = Unshift<[1, 2], 0> // [0, 1, 2,]
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/3060/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/3060/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -340,7 +340,7 @@ const foo = (arg1: string, arg2: number): void => {}
 type FunctionParamsType = MyParameters<typeof foo> // [arg1: string, arg2: number]
 ```
 
-[<img width="100" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/3312/play/zh-CN)
+[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/3312/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
