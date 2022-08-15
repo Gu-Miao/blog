@@ -39,7 +39,7 @@ reprint:
 
 > 作品链接 [dribbble.com](https://link.segmentfault.com/?enc=rkjBqmjwRGKXInHM1ot4KQ%3D%3D.JB5%2FqV1qbzgw3x96hlsiviuJTUKjFrBKz%2BlH6yDGnAUvpeaQwx576HlFQii2uIF%2F)
 
-<p><img width="80" src="/images/noise-effect-with-css/4.webp" /></p>
+<p><img width="80" src="/images/noise-effect-with-css/4.webp" alt="小球" /></p>
 
 ## 知识汇总
 
@@ -141,10 +141,10 @@ image-rendering: pixelated;
 
 以下页面是本文实现的多种噪点效果。
 
-![6](/images/noise-effect-with-css/6.webp)
+![效果](/images/noise-effect-with-css/6.webp)
 
-- `👀` 在线预览: [https://codepen.io/dragonir/full/rNdrmzB](https://codepen.io/dragonir/full/rNdrmzB)
-- `👀` 在线预览: [https://dragonir.github.io/noise/](https://link.segmentfault.com/?enc=QNHmZHADt8kv7UitERM%2Bnw%3D%3D.0VhLnZe%2BDzH1%2F8zu9IWVY4WBnJOakVHrtWhNvoFR9mP2LhaMUAkk%2FxBUjfe%2BZAnS)
+- 👀 在线预览: [https://codepen.io/dragonir/full/rNdrmzB](https://codepen.io/dragonir/full/rNdrmzB)
+- 👀 在线预览: [https://dragonir.github.io/noise/](https://link.segmentfault.com/?enc=QNHmZHADt8kv7UitERM%2Bnw%3D%3D.0VhLnZe%2BDzH1%2F8zu9IWVY4WBnJOakVHrtWhNvoFR9mP2LhaMUAkk%2FxBUjfe%2BZAnS)
 
 ## 实现
 
@@ -178,7 +178,7 @@ image-rendering: pixelated;
 
 通过给 `background` 添加 `linear-gradient` 和噪点图片背景，就可实现渐变的噪点效果。
 
-![7](/images/noise-effect-with-css/7.webp)
+![类型 0](/images/noise-effect-with-css/7.webp)
 
 ```html
 <div class="noise_0"></div>
@@ -194,7 +194,7 @@ image-rendering: pixelated;
 
 在上面的基础上，通过修改 `filter` 属性的对比度 `contrast` 和亮度 `brightness`，增强噪点效果得对比度。
 
-![8](/images/noise-effect-with-css/8.webp)
+![类型 1](/images/noise-effect-with-css/8.webp)
 
 ```html
 <div class="noise_1"></div>
@@ -210,7 +210,7 @@ image-rendering: pixelated;
 
 使用 `mix-blend-mode: multiply` 实现混合双色渐变的噪点效果。
 
-![9](/images/noise-effect-with-css/9.webp)
+![类型 2](/images/noise-effect-with-css/9.webp)
 
 ```html
 <div class="noise noise_2">
@@ -251,7 +251,7 @@ image-rendering: pixelated;
 
 圆形的噪点元素。
 
-![10](/images/noise-effect-with-css/10.webp)
+![类型 3](/images/noise-effect-with-css/10.webp)
 
 ```html
 <div class="noise_3">
@@ -278,7 +278,7 @@ image-rendering: pixelated;
 
 球形的噪点元素，给圆形噪点添加地面阴影和光照效果就能形成立体的球体效果。
 
-![11](/images/noise-effect-with-css/11.webp)
+![类型 4](/images/noise-effect-with-css/11.webp)
 
 ```html
 <div class="noise noise_5">
@@ -347,9 +347,9 @@ image-rendering: pixelated;
 
 ### 类型 5 🌕
 
-其他 `3D` 立体形状，包括球体、布丁 `🍮`、水滴 `💧`、花瓶 `🏺`、鸡蛋 `🥚`、红细胞 `💉`等，`🖱` 鼠标悬浮到元素上面可以看到三维旋转效果。
+其他 `3D` 立体形状，包括球体、布丁 🍮、水滴 💧、花瓶 🏺、鸡蛋 🥚、红细胞 💉 等，🖱 鼠标悬浮到元素上面可以看到三维旋转效果。
 
-![12](/images/noise-effect-with-css/12.webp)
+![类型 5](/images/noise-effect-with-css/12.webp)
 
 ```html
 <div class="item item--sphere item--color1"></div>
@@ -509,7 +509,7 @@ image-rendering: pixelated;
 
 多个噪点元素地叠加可以生成非常惊艳的效果，比如通过将三个噪点元素层叠在一起可以实现光学三原色 `RGB` 效果。
 
-![13](/images/noise-effect-with-css/13.webp)
+![类型 6](/images/noise-effect-with-css/13.webp)
 
 ```html
 <div class="noise_6">
@@ -551,7 +551,7 @@ image-rendering: pixelated;
 
 利用噪点元素还可以实现什么呢？中心扩散效果，太阳，涟漪，荷包蛋……
 
-![14](/images/noise-effect-with-css/14.webp)
+![类型 7](/images/noise-effect-with-css/14.webp)
 
 ```html
 <div class="noise_7">
@@ -595,7 +595,7 @@ image-rendering: pixelated;
 
 ### 背景噪点 🌜
 
-如果仔细观察的话，页面黑色背景也应用了噪点效果，是不是有一种黑白电视机的雪花屏复古感 `😂`。
+如果仔细观察的话，页面黑色背景也应用了噪点效果，是不是有一种黑白电视机的雪花屏复古感 😂。
 
 ```html
 <div class="bg"></div>
@@ -653,7 +653,7 @@ image-rendering: pixelated;
 }
 ```
 
-> `📥` 完整代码：[https://github.com/dragonir/noise](https://link.segmentfault.com/?enc=DwJykaB4KJXsvzgw7A%2Frdg%3D%3D.vny5hEWLg1MjRUloxem1FxJHyr1o%2Bikyu2%2FIODiDatvsJqwI%2BoRAecRL2ZBq73A6)
+> 📥 完整代码：[https://github.com/dragonir/noise](https://link.segmentfault.com/?enc=DwJykaB4KJXsvzgw7A%2Frdg%3D%3D.vny5hEWLg1MjRUloxem1FxJHyr1o%2Bikyu2%2FIODiDatvsJqwI%2BoRAecRL2ZBq73A6)
 
 ## 总结
 
