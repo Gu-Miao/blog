@@ -7,11 +7,12 @@ author:
   link: https://segmentfault.com/u/dragonir
 image: /images/noise-effect-with-css/banner.webp
 createdAt: '2022-08-15 15:27'
-updatedAt: '2022-08-15 16:30'
+updatedAt: '2022-08-16 11:30'
 category: cool
 tags:
   - 花里胡哨
   - CSS
+  - 转载
 reprint:
   description: 思否
   link: https://segmentfault.com/a/1190000042295231?_ea=260394020

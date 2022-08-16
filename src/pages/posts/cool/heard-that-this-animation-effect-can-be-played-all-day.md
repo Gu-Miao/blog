@@ -7,12 +7,13 @@ author:
   link: https://juejin.cn/user/2410576811924808
 image: /images/heard-that-this-animation-effect-can-be-played-all-day/banner.webp
 createdAt: '2022-08-10 15:56'
-updatedAt: '2022-08-10 17:53'
+updatedAt: '2022-08-16 11:29'
 category: cool
 tags:
   - 花里胡哨
   - CSS
   - 动画
+  - 转载
 reprint:
   description: 掘金
   link: https://juejin.cn/post/7129788202335862791
