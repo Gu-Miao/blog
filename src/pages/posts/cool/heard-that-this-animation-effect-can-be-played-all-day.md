@@ -24,7 +24,7 @@ reprint:
 
 🥵 看看近日温度
 
-<p><img class="img-center" width="300" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/66e6665c170945c0945e254bd69623dc~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="温度" loading="lazy" /></p>
+<p><img width="300" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/66e6665c170945c0945e254bd69623dc~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="温度" loading="lazy" /></p>
 
 这种天气的周末，在下也只能躺在床上吹着空调，然后赞叹一下外卖小哥的艰辛，顺便照顾一下他们的生意了。
 
@@ -34,13 +34,13 @@ reprint:
 
 嗯？什么交互动效能玩一天，让我瞧瞧 👀：
 
-<p><img class="img-center" width="560" src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/05bbd49805884ac0ac1389c589dca7e7~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="动效"  loading="lazy" /></p>
+<p><img width="560" src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/05bbd49805884ac0ac1389c589dca7e7~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="动效"  loading="lazy" /></p>
 
 嗷~这不就那啥嘛，先如此如此......再这般这般......不就行了？
 
 习惯性的点开评论区，果然，大家都非常的热情呢，主动给设计者料理后事......
 
-<p><img class="img-center" width="100%" src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb3446205e2647778af931cfdd619c9f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="评论"  loading="lazy" /></p>
+![评论](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb3446205e2647778af931cfdd619c9f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 这样一个丝滑的交互能不能玩一天，在下不知道。
 
@@ -94,7 +94,7 @@ reprint:
 
 就这样一个简单的容器盒子就画好了（别问我没有设计图颜色和尺寸都是怎么来的，截图+取色吸的 🙄）
 
-<p><img class="img-center" width="100%" src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c03e1a1ffd6d450296806657326f78b2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="容器"  loading="lazy" /></p>
+![容器](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c03e1a1ffd6d450296806657326f78b2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 ### 滑块
 
@@ -102,7 +102,7 @@ reprint:
 
 尺寸**图解**：
 
-<p><img class="img-center" width="100%" src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/399bae1d2e61436c84d96e038747a082~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="尺寸图解"  loading="lazy" /></p>
+![尺寸图解](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/399bae1d2e61436c84d96e038747a082~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 直接**上才艺**~
 
@@ -122,7 +122,7 @@ reprint:
 
 emmm....吸色好像不太靠谱？勉勉强强吧 🙄
 
-<p><img class="img-center" width="100%" src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6b67f3764e5146d5b265d547c5b9ad21~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="容器+滑块"  loading="lazy" /></p>
+![容器+滑块](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6b67f3764e5146d5b265d547c5b9ad21~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 ### 按钮
 
@@ -158,7 +158,7 @@ emmm....吸色好像不太靠谱？勉勉强强吧 🙄
 
 最终的成品就是
 
-<p><img class="img-center" width="100%" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eba6b244706444ebf837f3669fbd16c~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="静态内容"  loading="lazy" /></p>
+![静态内容](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eba6b244706444ebf837f3669fbd16c~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 嘿你别说，还挺有模有样呢？如果想再给按钮里添加类似抖音里那个图片，也是可以的，在下就不写了哈。
 
@@ -202,7 +202,7 @@ for (let i = 0; i < btns.length; i++) {
 
 这样点击后，滑块就会自己滑来滑去啦！
 
-<p><img class="img-center" width="100%" src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f632954eb7e74cbaa832f2acdd3fae5b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="滑块"  loading="lazy" /></p>
+![滑块](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f632954eb7e74cbaa832f2acdd3fae5b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 ## 按钮动效
 
@@ -300,7 +300,7 @@ function resetBtn(btns) {
 
 文字的缩放和在下的小细节，能看出来吗？
 
-<p><img class="img-center" width="100%" src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8814d89ca6134a95929f08aa25478e1b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="按钮.gif"  loading="lazy" /></p>
+![按钮.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8814d89ca6134a95929f08aa25478e1b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 ## 容器动效
 
@@ -349,7 +349,7 @@ for (let i = 0; i < btns.length; i++) {
 >
 > 寄几零五八，骚年！
 
-<p><img class="img-center" width="100%" src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9cc26bed56904bd99c39d578df2c51e5~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="容器.gif"  loading="lazy" /></p>
+![容器.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9cc26bed56904bd99c39d578df2c51e5~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 ## 亿点细节
 
@@ -392,7 +392,7 @@ for (let i = 0; i < btns.length; i++) {
 
 好！这样在下通过肉眼观察然后还原的**丝玩天**动效就做好啦，先喽一眼**最终成品图**：
 
-<p><img class="img-center" width="100%" src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6038be5a78ad416e80ccf50fe9ee5992~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="最终.gif"  loading="lazy" /></p>
+![最终.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6038be5a78ad416e80ccf50fe9ee5992~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 什么？你说好像没啥区别？🤨
 
@@ -557,7 +557,7 @@ function ThemeChange(bol) {
 
 🎉🎉 抑扬顿挫，欲扬先抑，先看成果，再谈原理 🎉🎉：
 
-<p><img class="img-center" width="1200" src="/images/heard-that-this-animation-effect-can-be-played-all-day/1.webp" alt="最终最终版本.gif"  loading="lazy" /></p>
+![最终最终版本.gif](/images/heard-that-this-animation-effect-can-be-played-all-day/1.webp)
 
 > 其实就是字面意思，混工作量。
 >
@@ -573,7 +573,7 @@ function ThemeChange(bol) {
 
 今天混工作量就到此为止吧，再混就不礼貌了~
 
-<p><img class="img-center" width="400" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6dd3ca20336e4e50ba42cc50bb1d25ab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="image.png"  loading="lazy" /></p>
+<p><img width="400" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6dd3ca20336e4e50ba42cc50bb1d25ab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" alt="image.png"  loading="lazy" /></p>
 
 秋都立完了，劳烦秋天赶紧到来吧，我要出去玩！！！
 

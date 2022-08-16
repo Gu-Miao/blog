@@ -34,11 +34,13 @@ const canonicalURL = Astro.url
           标签：{content.tags.map(tag => <span class="tag">{tag}</span>)}
         </li>
         {content.serials && <li>所属系列：{content.serials}</li>}
-        {content.reprint && (
-          <li>
-            转载自<ExLink href={content.reprint.link}>{content.reprint.description}</ExLink>
-          </li>
-        )}
+        {
+          content.reprint && (
+            <li>
+              转载自<ExLink href={content.reprint.link}>{content.reprint.description}</ExLink>
+            </li>
+          )
+        }
       </ul>
       <img src={content.image} alt={content.title} />
       <slot />
@@ -90,6 +92,29 @@ const canonicalURL = Astro.url
       border-radius: 0.3em;
       &:not(:last-child) {
         margin-right: 0.3em;
+      }
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      position: relative;
+      padding-left: 0.3em;
+      & > a {
+        position: absolute;
+        top: 50%;
+        left: calc(-16px + 0.1em);
+        transform: translateY(-50%);
+        & > svg {
+          visibility: hidden;
+        }
+      }
+      &:hover,
+      & > a:hover {
+        svg {
+          visibility: visible;
+        }
       }
     }
     img:not(.badge) {
