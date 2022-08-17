@@ -7,7 +7,7 @@ author:
   link: https://github.com/Gu-Miao
 image: /images/type-challenges-1.webp
 createdAt: '2022-07-20 09:00'
-updatedAt: '2022-08-15 16:25'
+updatedAt: '2022-08-17 18:34'
 category: typescript
 tags:
   - TypeScript
@@ -53,6 +53,8 @@ type MyPick<T, K extends keyof T> = {
 }
 ```
 
+这里用 [`Mapped Type`](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)，所有的键都来自 `K`，那么遍历 `K` 再给 `T[key]` 就行了。
+
 </details>
 
 ## 实现 Readonly
@@ -91,6 +93,8 @@ type MyReadonly<T> = {
 }
 ```
 
+看过文档就会写，没什么可说的。
+
 </details>
 
 ## 元组转换为对象
@@ -115,6 +119,8 @@ type TupleToObject<T extends readonly any[]> = {
   [key in T[number]]: key
 }
 ```
+
+关于 `T[number]`，看一下这里：[Indexed Access Types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html)
 
 </details>
 
@@ -141,6 +147,8 @@ type head2 = First<arr2> // expected to be 3
 type First<T extends any[]> = T extends [infer F, ...infer Rest] ? F : never
 ```
 
+考察 `infer` 的，看这里：[Inferring Within Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
+
 </details>
 
 ## 获取元组长度
@@ -166,6 +174,12 @@ type spaceXLength = Length<spaceX> // expected 5
 type Length<T extends readonly any[]> = T['length']
 ```
 
+在 TypeScript 中，数组类型的 `length` 属性会返回**具体的数字**作为类型而非 `number`。比如：
+
+```ts
+type TestLength = [1, 2, 3, 4, 5]['length'] // 5
+```
+
 </details>
 
 ## 实现 Exclude
@@ -188,6 +202,12 @@ type Result = MyExclude<'a' | 'b' | 'c', 'a'> // 'b' | 'c'
 ```ts
 type MyExclude<T, U> = T extends U ? never : T
 ```
+
+来了来了：
+
+- [Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
+
+- [Distributive Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#distributive-conditional-types)
 
 </details>
 
@@ -212,6 +232,8 @@ type Result = MyAwaited<ExampleType> // string
 type MyAwaited<T> = T extends Promise<infer K> ? MyAwaited<K> : T
 ```
 
+如果你认真弄懂了上面的题目，这个题并不难。首先判断 `T` 是否为 `Promise`，如果不是，直接返回即可；如果是，那么用 `infer` 拿到 `Promise` 中的类型再递归就行了。
+
 </details>
 
 ## If
@@ -234,6 +256,8 @@ type B = If<false, 'a', 'b'> // expected to be 'b'
 type If<C extends boolean, T, F> = C extends true ? T : F
 ```
 
+很简单的一题，没什么可说的。
+
 </details>
 
 ## Concat
@@ -254,6 +278,8 @@ type Result = Concat<[1], [2]> // expected to be [1, 2]
 ```ts
 type Concat<T extends any[], U extends any[]> = [...T, ...U]
 ```
+
+类型系统中也可以用 `...` 哦 🤣
 
 </details>
 
@@ -283,6 +309,8 @@ type Includes<T extends readonly any[], U> = T extends [infer F, ...infer Rest]
     : Includes<Rest, U>
   : false
 ```
+
+这里的 `Equal` 类型我们直接用 `@type-challenges/utils` 提供的，这里不做展开。
 
 </details>
 
