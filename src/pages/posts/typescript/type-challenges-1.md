@@ -7,7 +7,7 @@ author:
   link: https://github.com/Gu-Miao
 image: /images/type-challenges-1.webp
 createdAt: '2022-07-20 09:00'
-updatedAt: '2022-08-17 18:34'
+updatedAt: '2022-08-18 09:41'
 category: typescript
 tags:
   - TypeScript
@@ -279,7 +279,7 @@ type Result = Concat<[1], [2]> // expected to be [1, 2]
 type Concat<T extends any[], U extends any[]> = [...T, ...U]
 ```
 
-类型系统中也可以用 `...` 哦 🤣
+类型系统中也可以用 `...` 运算符哦 🤣
 
 </details>
 
@@ -312,6 +312,8 @@ type Includes<T extends readonly any[], U> = T extends [infer F, ...infer Rest]
 
 这里的 `Equal` 类型我们直接用 `@type-challenges/utils` 提供的，这里不做展开。
 
+重点是数组的遍历，首先判空，再用 `infer` 去拿第一个元素和剩余元素，再进行递归。这种方式后面会经常出现。
+
 </details>
 
 ## Push
@@ -333,6 +335,8 @@ type Result = Push<[1, 2], '3'> // [1, 2, '3']
 type Push<T extends any[], U> = [...T, U]
 ```
 
+灵活地运用 `...` 运算符。
+
 </details>
 
 ## Unshift
@@ -353,6 +357,8 @@ type Result = Unshift<[1, 2], 0> // [0, 1, 2,]
 ```ts
 type Unshift<T extends any[], U> = [U, ...T]
 ```
+
+做了上面的题，这个也是小 case。
 
 </details>
 
@@ -378,5 +384,7 @@ type MyParameters<T extends (...args: any[]) => any> = T extends (...args: infer
   ? P
   : never
 ```
+
+参数也可用 `...` 运算符，剩下就靠 `infer` 大法了。
 
 </details>
