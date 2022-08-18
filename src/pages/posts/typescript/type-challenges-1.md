@@ -53,7 +53,11 @@ type MyPick<T, K extends keyof T> = {
 }
 ```
 
-这里用 [`Mapped Type`](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)，所有的键都来自 `K`，那么遍历 `K` 再给 `T[key]` 就行了。
+`K extends keyof T` 是用来限制泛型参数 `K` 的，让 `K` 必须满足 `keyof T` 类型。
+
+看看这里：[Using Type Parameters in Generic Constraints](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-constraints)
+
+然后这里还用了 [`Mapped Type`](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)，所有的键都来自 `K`，那么遍历 `K` 再给 `T[key]` 就行了。
 
 </details>
 
