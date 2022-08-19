@@ -7,7 +7,7 @@ author:
   link: https://github.com/Gu-Miao
 image: /images/type-challenges-1.webp
 createdAt: '2022-07-20 09:00'
-updatedAt: '2022-08-18 09:41'
+updatedAt: '2022-08-19 10:10'
 category: typescript
 tags:
   - TypeScript
@@ -326,7 +326,7 @@ type Includes<T extends readonly any[], U> = T extends [infer F, ...infer Rest]
 
 例如：
 
-```typescript
+```ts
 type Result = Push<[1, 2], '3'> // [1, 2, '3']
 ```
 
@@ -349,7 +349,7 @@ type Push<T extends any[], U> = [...T, U]
 
 例如：
 
-```typescript
+```ts
 type Result = Unshift<[1, 2], 0> // [0, 1, 2,]
 ```
 
