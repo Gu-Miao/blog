@@ -7,7 +7,7 @@ author:
   link: https://github.com/Gu-Miao
 image: /images/type-challenges-3.webp
 createdAt: '2022-08-08 09:00'
-updatedAt: '2022-08-17 10:07'
+updatedAt: '2022-08-19 16:40'
 category: typescript
 tags:
   - TypeScript
@@ -28,7 +28,7 @@ serials: type-challenges 类型挑战系列
 <details>
 <summary>展开查看答案</summary>
 
-在 typescript 中，如果 `T` 是一个字符串类型，那么 `T['length']` 为 `number` 类型；而如果 `T` 是一个数组类型，那么 `T['length']` 会是具体的数字。也就是说，我们需要将字符串转换为数组或元组，即可得到准确的长度。
+在 TypeScript 中，如果 `T` 是一个字符串类型，那么 `T['length']` 为 `number` 类型；而如果 `T` 是一个数组类型，那么 `T['length']` 会是具体的数字。也就是说，我们需要将字符串转换为数组或元组，即可得到准确的长度。
 
 最简单的办法，写一个 `StringToArray` 工具类型，将字符串转换为数组，再直接返回它的长度：
 
@@ -118,7 +118,7 @@ type test = { name: string } & { name: boolean } // type test = never
 
 ## Absolute
 
-实现一个接收 string,number 或 bigInt 类型参数的`Absolute`类型,返回一个正数字符串。
+实现一个接收 `string`，`number` 或 `bigint` 类型参数的 `Absolute` 类型，返回一个正数字符串。
 
 例如
 
