@@ -56,7 +56,6 @@
     "body": ["<details>", "<summary>展开查看答案</summary>", "", "```ts", "$0", "```", "</details>"]
   },
   "currentTime": {
-    "scope": "markdown",
     "prefix": "currentTimeSnippet",
     "body": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}$0"
   }
