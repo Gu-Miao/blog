@@ -5,7 +5,7 @@ import solidjs from '@astrojs/solid-js'
 const HeadingIconHast = {
   type: 'element',
   tagName: 'svg',
-  properties: { viewBox: '0 0 16 16', version: '1.1', width: '16', height: '16' },
+  properties: { viewBox: '0 0 16 16', version: '1.1' },
   children: [
     {
       type: 'element',
