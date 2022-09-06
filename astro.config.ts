@@ -22,12 +22,13 @@ export default defineConfig({
   site: 'https://guangwublog.vercel.app',
   integrations: [sitemap(), solidjs()],
   markdown: {
-    remarkPlugins: ['remark-gfm', 'remark-smartypants'],
+    remarkPlugins: ['remark-gfm', 'remark-smartypants', 'remark-math'],
     rehypePlugins: [
       ['rehype-external-links', { target: '_blank', rel: 'external nofollow noopener noreferrer' }],
       'rehype-slug',
       ['rehype-autolink-headings', { content: HeadingIconHast }],
       'rehype-plugin-image-native-lazy-loading',
+      'rehype-katex',
     ],
     shikiConfig: {
       theme: 'dark-plus',

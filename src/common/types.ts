@@ -15,4 +15,5 @@ export interface Frontmatter {
     description: string
     link: string
   }
+  katex?: boolean
 }
