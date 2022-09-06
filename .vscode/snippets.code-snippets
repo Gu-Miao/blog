@@ -36,6 +36,7 @@
       "reprint:",
       "  description: $9",
       "  link: $10",
+      "katex: $11",
       "---",
       "$0"
     ]

@@ -4,7 +4,6 @@ import ExLink from '@/components/ExLink.astro'
 import { MarkdownContent } from 'astro'
 import { Frontmatter } from '@/common/types'
 import { formatDate } from '@/utils/utils'
-import KatexStyle from '@/components/KatexStyle.astro'
 
 interface Props {
   content: MarkdownContent<Frontmatter>
@@ -22,6 +21,7 @@ const canonicalURL = Astro.url
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    {content.katex && <link rel="stylesheet" href="/katex/katex.min.css" />}
   </Fragment>
   <div class="blog">
     <div class="container">
@@ -48,16 +48,13 @@ const canonicalURL = Astro.url
     </div>
   </div>
 </Basic>
-{content.katex && <KatexStyle />}
+
 <style is:global lang="less">
   .blog {
     height: 100vh;
     overflow-y: auto;
     padding: 1.5em;
     background-color: #eee;
-    .katex .katex-mathml {
-      display: none;
-    }
     .container {
       width: 100%;
       max-width: 1200px;
@@ -227,6 +224,12 @@ const canonicalURL = Astro.url
           border-radius: 0;
         }
       }
+    }
+    .katex-mathml {
+      display: none;
+    }
+    .katex-html {
+      white-space: nowrap;
     }
   }
 </style>
