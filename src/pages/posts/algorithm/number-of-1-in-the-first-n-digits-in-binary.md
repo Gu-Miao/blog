@@ -12,6 +12,7 @@ category: algorithm
 tags:
   - 算法
   - 动态规划
+  - 转载
 reprint:
   description: 力扣（LeetCode）
   link: https://leetcode.cn/problems/w3tCBm
