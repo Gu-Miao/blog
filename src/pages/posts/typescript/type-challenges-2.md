@@ -34,7 +34,7 @@ const fn = (v: boolean) => {
 type a = MyReturnType<typeof fn> // 应推导出 "1 | 2"
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/2/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/2/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -69,7 +69,7 @@ const todo: TodoPreview = {
 }
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/3/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/3/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -118,7 +118,7 @@ todo.description = 'barFoo' // Error: cannot reassign a readonly property
 todo.completed = true // OK
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/8/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/8/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -175,7 +175,7 @@ type Expected = {
 type Todo = DeepReadonly<X> // should be same as `Expected`
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/9/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/9/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -241,7 +241,7 @@ type Arr = ['1', '2', '3']
 type Test = TupleToUnion<Arr> // expected to be '1' | '2' | '3'
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/10/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/10/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -285,7 +285,7 @@ interface Result {
 
 你可以假设 `key` 只接受字符串而 `value` 接受任何类型，你只需要暴露它传递的类型而不需要进行任何处理。同样的 `key` 只会被使用一次。
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/12/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/12/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -322,9 +322,9 @@ type Chainable<T = {}> = {
 
 对了，这里再插一嘴，很多答案会用 `&` 结合一些类型函数去合并对象，其实我不太推荐这样，我更推荐使用 `mapped types`，因为它的语法提示是最好的：
 
-<p><img width="400" src="/images/type-challenges-2/1.webp" alt="mapped types" loading="lazy"/></p>
+![mapped types||800x533](/images/type-challenges-2/1.webp)
 
-![&](/images/type-challenges-2/2.webp)
+![&||1200x161](/images/type-challenges-2/2.webp)
 
 </details>
 
@@ -342,7 +342,7 @@ type tail1 = Last<arr1> // expected to be 'c'
 type tail2 = Last<arr2> // expected to be 1
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/15/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/15/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -373,7 +373,7 @@ type re2 = Pop<arr2> // expected to be [3, 2]
 
 > **额外**：同样，您也可以实现 `Shift`，`Push` 和 `Unshift` 吗？
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/16/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/16/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -401,7 +401,7 @@ const promise3 = new Promise<string>((resolve, reject) => {
 const p = Promise.all([promise1, promise2, promise3] as const)
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/20/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/20/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -468,7 +468,7 @@ interface Dog {
 type MyDog = LookUp<Cat | Dog, 'dog'> // expected to be `Dog`
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/62/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/62/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -518,7 +518,7 @@ U['type'] extends T // U['type'] 是 'cat' | 'dog'，不会触发分离联合类
 type trimed = TrimLeft<'  Hello World  '> // 应推导出 'Hello World  '
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/106/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/106/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -541,7 +541,7 @@ type TrimLeft<S extends string> = S extends `${' ' | '\n' | '\t'}${infer Rest}` 
 type trimed = Trim<'  Hello World  '> // expected to be 'Hello World'
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/108/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/108/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -567,7 +567,7 @@ type Trim<S extends string> = S extends `${Space}${infer Rest}` | `${infer Rest}
 type capitalized = Capitalize<'hello world'> // expected to be 'Hello world'
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/110/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/110/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -590,7 +590,7 @@ type MyCapitalize<S extends string> = S extends `${infer F}${infer Rest}`
 type replaced = Replace<'types are fun!', 'fun', 'awesome'> // 期望是 'types are awesome!'
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/116/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/116/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -615,7 +615,7 @@ type Replace<S extends string, From extends string, To extends string> = From ex
 type replaced = ReplaceAll<'t y p e s', ' ', ''> // 期望是 'types'
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/119/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/119/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -647,7 +647,7 @@ type Result = AppendArgument<Fn, boolean>
 
 > 本挑战来自于 [@maciejsikora](https://github.com/maciejsikora) 在 Dev.io 上的[文章](https://dev.to/macsikora/advanced-typescript-exercises-question-4-495c)
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/191/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/191/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -672,7 +672,7 @@ type AppendArgument<Fn extends (...args: any[]) => any, A> = Fn extends (
 type perm = Permutation<'A' | 'B' | 'C'> // ['A', 'B', 'C'] | ['A', 'C', 'B'] | ['B', 'A', 'C'] | ['B', 'C', 'A'] | ['C', 'A', 'B'] | ['C', 'B', 'A']
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/296/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/296/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>

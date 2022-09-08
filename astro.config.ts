@@ -29,6 +29,7 @@ export default defineConfig({
       ['rehype-autolink-headings', { content: HeadingIconHast }],
       'rehype-plugin-image-native-lazy-loading',
       'rehype-katex',
+      'rehype-plugin-image-alt-extends',
     ],
     shikiConfig: {
       theme: 'dark-plus',

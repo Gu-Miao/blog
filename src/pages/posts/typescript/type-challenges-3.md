@@ -23,7 +23,7 @@ serials: type-challenges 类型挑战系列
 
 计算字符串的长度，类似于 `String#length` 。
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/298/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/298/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -59,7 +59,7 @@ type LengthOfString<S extends string, A extends string[] = []> = S extends `${in
 type flatten = Flatten<[1, 2, [3, 4], [[[5]]]]> // [1, 2, 3, 4, 5]
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/459/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/459/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -87,7 +87,7 @@ type Test = { id: '1' }
 type Result = AppendToObject<Test, 'value', 4> // expected to be { id: '1', value: 4 }
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/527/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/527/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -127,7 +127,7 @@ type Test = -100
 type Result = Absolute<Test> // expected to be "100"
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/529/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/529/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -151,7 +151,7 @@ type Test = '123'
 type Result = StringToUnion<Test> // expected to be "1" | "2" | "3"
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/531/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/531/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -186,7 +186,7 @@ type coo = {
 type Result = Merge<foo, coo> // expected to be {name: string, age: number, sex: string}
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/599/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/599/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -207,7 +207,7 @@ type Merge<F, S> = {
 
 `FooBarBaz` -> `foo-bar-baz`
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/612/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/612/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -285,7 +285,7 @@ type Result1 = Diff<Foo, Bar> // { b: number, c: boolean }
 type Result2 = Diff<Bar, Foo> // { b: number, c: boolean }
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/645/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/645/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -317,7 +317,7 @@ type Sample1 = AnyOf<[1, '', false, [], {}]> // expected to be true.
 type Sample2 = AnyOf<[0, '', false, [], {}]> // expected to be false.
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/949/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/949/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -357,7 +357,7 @@ type D = IsNever<[]> // expected to be false
 type E = IsNever<number> // expected to be false
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/1042/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/1042/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -383,7 +383,7 @@ type case2 = IsUnion<string | number> // true
 type case3 = IsUnion<[string | number]> // false
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/1097/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/1097/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -532,7 +532,7 @@ type ReplacedNotExistKeys = ReplaceKeys<Nodes, 'name', { aa: number }>
 // 将 name 替换为 never
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/1130/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/1130/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -570,7 +570,7 @@ type Foo = {
 type A = RemoveIndexSignature<Foo> // { foo(): void }
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/1367/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/1367/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -614,7 +614,7 @@ type R4 = PercentageParser<PString4> // expected ["", "85", "%"]
 type R5 = PercentageParser<PString5> // expected ["", "85", ""]
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/1978/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/1978/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>
@@ -645,7 +645,7 @@ type PercentageParser<A extends string> = A extends `${infer F}${infer R}`
 type Butterfly = DropChar<' b u t t e r f l y ! ', ' '> // 'butterfly!'
 ```
 
-[<img class="badge" src="https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white" alt="接受挑战"/>](https://tsch.js.org/2070/play/zh-CN)
+[![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/2070/play/zh-CN)
 
 <details>
 <summary>展开查看答案</summary>

@@ -43,7 +43,7 @@ const canonicalURL = Astro.url
           )
         }
       </ul>
-      <img src={content.image} alt={content.title} />
+      <img width="1200" height="600" class="banner" src={content.image} alt={content.title} />
       <slot />
     </div>
   </div>
@@ -123,17 +123,22 @@ const canonicalURL = Astro.url
         }
       }
     }
-    img:not(.badge) {
+    img {
       display: block;
       margin: 0 auto;
       max-width: 100%;
+      height: auto;
       border-radius: 0.5em;
-      &:not([width]) {
-        width: 100%;
+      &.no-radius {
+        border-radius: 0;
+      }
+      &.left {
+        margin: 0;
       }
     }
-    img.badge {
-      height: 1.5em;
+    .banner {
+      aspect-ratio: 2;
+      object-fit: cover;
     }
     ul,
     ol {
