@@ -378,8 +378,6 @@ const foo = (arg1: string, arg2: number): void => {}
 type FunctionParamsType = MyParameters<typeof foo> // [arg1: string, arg2: number]
 ```
 
-[![接受挑战||.badge 200x200](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/3312/play/zh-CN)
-
 [![接受挑战||.left .no-radius 110x30](https://img.shields.io/badge/-%E6%8E%A5%E5%8F%97%E6%8C%91%E6%88%98-3178c6?logo=typescript&logoColor=white)](https://tsch.js.org/3312/play/zh-CN)
 
 <details>
