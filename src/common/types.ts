@@ -11,7 +11,7 @@ export interface Frontmatter {
   category: string
   tags: string[]
   serials?: string
-  reprint: {
+  reprint?: {
     description: string
     link: string
   }
