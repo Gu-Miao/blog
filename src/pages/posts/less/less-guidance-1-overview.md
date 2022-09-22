@@ -8,7 +8,7 @@ author:
 image: /images/less-gudiance-1-overview.webp
 createdAt: '2022-07-15 09:00'
 updatedAt: '2022-07-15 09:00'
-category: less
+category: Less
 tags:
   - CSS
   - Less

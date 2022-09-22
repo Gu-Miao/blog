@@ -8,7 +8,7 @@ author:
 image: /images/number-of-1-in-the-first-n-digits-in-binary.webp
 createdAt: '2022-09-06 10:17'
 updatedAt: '2022-09-06 10:17'
-category: algorithm
+category: 算法
 tags:
   - 算法
   - 动态规划

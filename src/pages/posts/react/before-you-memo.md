@@ -8,7 +8,7 @@ author:
 image: /images/before-you-memo.webp
 createdAt: '2021-02-23 09:00'
 updatedAt: '2022-08-04 09:00'
-category: react
+category: React
 tags:
   - React
   - 转载

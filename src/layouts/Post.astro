@@ -31,6 +31,7 @@ const canonicalURL = Astro.url
           作者：<ExLink href={content.author.link}>{content.author.name}</ExLink>
         </li>
         <li>创建于 {formatDate(content.createdAt)}，最后更新于 {formatDate(content.updatedAt)}</li>
+        <li>分类：{content.category}</li>
         <li class="tag-container">
           标签：{content.tags.map(tag => <span class="tag">{tag}</span>)}
         </li>

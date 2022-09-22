@@ -8,7 +8,7 @@ author:
 image: /images/noise-effect-with-css/banner.webp
 createdAt: '2022-08-15 15:27'
 updatedAt: '2022-08-16 11:30'
-category: cool
+category: 花里胡哨
 tags:
   - 花里胡哨
   - CSS

@@ -8,7 +8,7 @@ author:
 image: /images/heard-that-this-animation-effect-can-be-played-all-day/banner.webp
 createdAt: '2022-08-10 15:56'
 updatedAt: '2022-08-16 11:29'
-category: cool
+category: 花里胡哨
 tags:
   - 花里胡哨
   - CSS

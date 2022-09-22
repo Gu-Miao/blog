@@ -8,7 +8,7 @@ author:
 image: /images/type-challenges-2/banner.webp
 createdAt: '2022-07-21 09:00'
 updatedAt: '2022-08-19 16:39'
-category: typescript
+category: TypeScript
 tags:
   - TypeScript
   - type-challenges
