@@ -3,7 +3,7 @@ layout: '@/layouts/Post.astro'
 title: Less 教程【一】概览
 abstract: Less 是一个向后兼容的 CSS 语言扩展，也称为 CSS 预处理器。既然是 CSS 相关的东西，那么肯定要求有一定的 CSS 功底。本系列旨在引领深入地学习和探讨 Less 的功能与特性。本系列的章节结构与官方文档基本一致，也可以对照官方文档一起阅读。另外本系列使用的 Less 版本为最新的 4.1.2，且不会过多涉及 Less 本身的历史包袱。
 author:
-  name: 光舞
+  name: Gu-Miao
   link: https://github.com/Gu-Miao
 image: /images/less-gudiance-1-overview.webp
 createdAt: '2022-07-15 09:00'

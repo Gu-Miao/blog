@@ -3,7 +3,7 @@ layout: '@/layouts/Post.astro'
 title: type-challenges 类型挑战系列【二】
 abstract: type-challenges 意在于让你更好的了解 TS 的类型系统，编写你自己的类型工具，它可以帮助我们更好地编写类型代码，提升自己的能力，或者只是单纯的享受挑战的乐趣！
 author:
-  name: 光舞
+  name: Gu-Miao
   link: https://github.com/Gu-Miao
 image: /images/type-challenges-2/banner.webp
 createdAt: '2022-07-21 09:00'

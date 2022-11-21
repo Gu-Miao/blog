@@ -3,7 +3,7 @@ layout: '@/layouts/Post.astro'
 title: 前 n 个数字二进制中 1 的个数
 abstract: 给定一个非负整数 n，请计算 0 到 n 之间的每个数字的二进制表示中 1 的个数，并输出一个数组。
 author:
-  name: 光舞
+  name: Gu-Miao
   link: https://github.com/Gu-Miao
 image: /images/number-of-1-in-the-first-n-digits-in-binary.webp
 createdAt: '2022-09-06 10:17'

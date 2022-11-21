@@ -3,7 +3,7 @@ layout: '@/layouts/Post.astro'
 title: 如何设置 cargo 镜像源
 abstract: cargo 从 crates.io 上下载第三方包，但是国内下载速度很慢，本篇来看看在 Windows 下如何配置 cargo 镜像源。
 author:
-  name: 光舞
+  name: Gu-Miao
   link: https://github.com/Gu-Miao
 image: /images/cargo-registry.webp
 createdAt: '2022-10-10 14:30'

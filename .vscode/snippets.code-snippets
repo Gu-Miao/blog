@@ -24,7 +24,7 @@
       "title: $1",
       "abstract: $2",
       "author:",
-      "  name: 光舞$3",
+      "  name: Gu-Miao$3",
       "  link: https://github.com/Gu-Miao$4",
       "image: /images/$5.webp",
       "createdAt: '${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}'",
