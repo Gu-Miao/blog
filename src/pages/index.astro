@@ -28,17 +28,37 @@ const sortedPosts = posts.sort(
 
 <style lang="less">
   .home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 2em;
-    background-color: #eee;
+    height: 100vh;
+    overflow: auto;
+    background-color: #efefef;
+    @media screen and (min-width: 1100px) {
+      & {
+        justify-content: flex-start;
+        background-image: url(/images/background.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
     .container {
       position: relative;
-      max-width: 960px;
-      margin: 0 auto;
+      max-width: 48em;
+      @media screen and (min-width: 1100px) {
+        & {
+          padding: 2em;
+          border-radius: 0.5em;
+          background: rgba(255, 255, 255, 0.75);
+          box-shadow: 0 0 1em rgba(255, 255, 255, 0.4);
+        }
+      }
     }
     .links {
       position: absolute;
-      top: 1em;
-      right: 1em;
+      top: 2em;
+      right: 2em;
       a {
         margin-right: 0.5em;
         &:last-child {
@@ -49,6 +69,7 @@ const sortedPosts = posts.sort(
     .title {
       font-family: '楷体';
       font-size: 2.5em;
+      margin-top: 0;
     }
     .description {
       margin-top: -1.4em;
