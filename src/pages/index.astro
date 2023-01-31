@@ -22,6 +22,7 @@ const sortedPosts = posts.sort(
       <h1 class="title">{TITLE}</h1>
       <h2 class="description">{DESCRIPTION}</h2>
       <PostList client:idle posts={sortedPosts} />
+      <div class="footer">冀ICP备20018224号-1</div>
     </div>
   </div>
 </Basic>
@@ -77,6 +78,10 @@ const sortedPosts = posts.sort(
       font-size: 1.2em;
       font-weight: bold;
       color: #666;
+    }
+    .footer {
+      color: #666;
+      font-size: 0.85em;
     }
   }
 </style>
