@@ -17,7 +17,7 @@ const {
   canonicalURL,
 } = Astro.props as HeadProps
 const wholeTitle = `${TITLE}${title ? ` | ${title}` : ''}`
-const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', 'Gu-Miao', 'Gu-Miao的博客', 'guangwublog'].concat(tags)
+const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', 'Gu-Miao 的博客'].concat(tags)
 ---
 
 <head>
@@ -39,9 +39,9 @@ const keywords = [TITLE, DESCRIPTION, 'Gu-Miao', 'Gu-Miao', 'Gu-Miao的博客', 
   <meta name="twitter:title" content={wholeTitle} />
   <meta name="twitter:description" content={description} />
   {image && <meta name="twitter:image" content={image} />}
-  <meta name="360-site-verification" content="6a43180b157ff2414bdfa8c933878d49" />
-  <meta name="baidu-site-verification" content="code-WlyUMkPhYv" />
-  <meta name="google-site-verification" content="wxzMienJWq_sQDX-uMWTOdz2zh8GENVXXOV5Ikfs7fg" />
+  <meta name="360-site-verification" content="195311714ff95fed75cb9d97389d719c" />
+  <meta name="baidu-site-verification" content="codeva-iuGtVx4QJO" />
+  <meta name="google-site-verification" content="unrCDwjt1zUcNM_arCiT61HIRLPL2mpSL5YOQATqXS4" />
   <meta name="msvalidate.01" content="E96DC7A42B8C6E07B662B02FBEC5101E" />
   <slot />
 </head>

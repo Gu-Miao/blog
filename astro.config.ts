@@ -19,7 +19,7 @@ const HeadingIconHast = {
 }
 
 export default defineConfig({
-  site: 'https://guangwublog.vercel.app',
+  site: 'https://blog.gutianhuang.red/',
   integrations: [sitemap(), solidjs()],
   markdown: {
     remarkPlugins: ['remark-gfm', 'remark-smartypants', 'remark-math'],
