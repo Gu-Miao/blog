@@ -1,11 +1,15 @@
 import { defineConfig } from 'astro/config'
 import sitemap from '@astrojs/sitemap'
 import solidjs from '@astrojs/solid-js'
+import compress from 'astro-compress'
 
 const HeadingIconHast = {
   type: 'element',
   tagName: 'svg',
-  properties: { viewBox: '0 0 16 16', version: '1.1' },
+  properties: {
+    viewBox: '0 0 16 16',
+    version: '1.1',
+  },
   children: [
     {
       type: 'element',
@@ -18,15 +22,27 @@ const HeadingIconHast = {
   ],
 }
 
+// https://astro.build/config
 export default defineConfig({
   site: 'https://blog.gutianhuang.red/',
-  integrations: [sitemap(), solidjs()],
+  integrations: [sitemap(), solidjs(), compress({ js: false, img: false })],
   markdown: {
     remarkPlugins: ['remark-gfm', 'remark-smartypants', 'remark-math'],
     rehypePlugins: [
-      ['rehype-external-links', { target: '_blank', rel: 'external nofollow noopener noreferrer' }],
+      [
+        'rehype-external-links',
+        {
+          target: '_blank',
+          rel: 'external nofollow noopener noreferrer',
+        },
+      ],
       'rehype-slug',
-      ['rehype-autolink-headings', { content: HeadingIconHast }],
+      [
+        'rehype-autolink-headings',
+        {
+          content: HeadingIconHast,
+        },
+      ],
       'rehype-plugin-image-native-lazy-loading',
       'rehype-katex',
       'rehype-plugin-image-alt-extends',
