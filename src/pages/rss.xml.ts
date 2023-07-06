@@ -16,6 +16,7 @@ export const get = () =>
     description: DESCRIPTION,
     site: import.meta.env.SITE,
     items: posts
+      .filter(post => !post.frontmatter.draft)
       .map(post => ({
         link: post.url,
         title: post.frontmatter.title,

@@ -7,7 +7,8 @@ import { DESCRIPTION, TITLE } from '@/common/constants'
 
 const canonicalURL = Astro.url
 const posts = await Astro.glob<Frontmatter>('./**/*.md')
-const sortedPosts = posts.sort(
+const nonDraftPosts = posts.filter(post => !post.frontmatter.draft)
+const sortedPosts = nonDraftPosts.sort(
   (p1, p2) => dayjs(p2.frontmatter.updatedAt).unix() - dayjs(p1.frontmatter.updatedAt).unix(),
 )
 ---

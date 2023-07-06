@@ -16,4 +16,5 @@ export interface Frontmatter {
     link: string
   }
   katex?: boolean
+  draft?: boolean
 }
