@@ -5,9 +5,10 @@ import dayjs from 'dayjs'
 import { Frontmatter } from '@/common/types'
 import { DESCRIPTION, TITLE } from '@/common/constants'
 
+const isDev = import.meta.env.DEV
 const canonicalURL = Astro.url
 const posts = await Astro.glob<Frontmatter>('./**/*.md')
-const nonDraftPosts = posts.filter(post => !post.frontmatter.draft)
+const nonDraftPosts = posts.filter(post => isDev || !post.frontmatter.draft)
 const sortedPosts = nonDraftPosts.sort(
   (p1, p2) => dayjs(p2.frontmatter.updatedAt).unix() - dayjs(p1.frontmatter.updatedAt).unix(),
 )
