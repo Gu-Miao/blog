@@ -25,7 +25,6 @@ const sortedPosts = nonDraftPosts.sort(
       <h1 class="title">{TITLE}</h1>
       <h2 class="description">{DESCRIPTION}</h2>
       <PostList client:idle posts={sortedPosts} />
-      <div class="footer"><ExLink href="https://beian.miit.gov.cn/" >冀ICP备20018224号-1</ExLink></div>
     </div>
   </div>
 </Basic>
@@ -81,10 +80,6 @@ const sortedPosts = nonDraftPosts.sort(
       font-size: 1.2em;
       font-weight: bold;
       color: #666;
-    }
-    .footer {
-      color: #666;
-      font-size: 0.85em;
     }
   }
 </style>
