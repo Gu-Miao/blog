@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss'
 import dayjs from 'dayjs'
 import { TITLE, DESCRIPTION, LANGUAGE } from '@/common/constants'
-import { MarkdownInstance } from 'astro'
+import { APIContext, MarkdownInstance } from 'astro'
 import { Frontmatter } from '@/common/types'
 
 const postImportResult = import.meta.glob('./posts/**/*.md', { eager: true }) as Record<
@@ -10,11 +10,12 @@ const postImportResult = import.meta.glob('./posts/**/*.md', { eager: true }) as
 >
 const posts = Object.values(postImportResult)
 
-export const get = () =>
-  rss({
+export function GET(context: APIContext) {
+  console.log('context', Object.keys(context).toString())
+  return rss({
     title: TITLE,
     description: DESCRIPTION,
-    site: import.meta.env.SITE,
+    site: context.site,
     items: posts
       .filter(post => !post.frontmatter.draft)
       .map(post => ({
@@ -26,3 +27,4 @@ export const get = () =>
       .sort((p1, p2) => dayjs(p2.pubDate).unix() - dayjs(p1.pubDate).unix()),
     customData: `<language>${LANGUAGE}</language>`,
   })
+}

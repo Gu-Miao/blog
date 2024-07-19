@@ -25,7 +25,11 @@ const HeadingIconHast = {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://blog.gutianhuang.red/',
-  integrations: [sitemap(), solidjs(), compress({ js: false, img: false })],
+  integrations: [
+    sitemap(),
+    solidjs(),
+    compress({ HTML: true, CSS: false, JavaScript: false, Image: false }),
+  ],
   markdown: {
     remarkPlugins: ['remark-gfm', 'remark-smartypants', 'remark-math'],
     rehypePlugins: [

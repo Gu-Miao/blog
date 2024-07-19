@@ -32,7 +32,9 @@ const Search: Component<SearchProps> = props => {
                 return (
                   <li>
                     <h3>
-                      <a href={post.url}>{post.frontmatter.title}</a>
+                      <a href={post.url} target="_blank">
+                        {post.frontmatter.title}
+                      </a>
                     </h3>
                     <p>{post.frontmatter.abstract}</p>
                     <p>

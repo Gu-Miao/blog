@@ -9,3 +9,6 @@ pnpm-debug.log*
 
 # katex
 public/katex
+
+# astro
+.astro
