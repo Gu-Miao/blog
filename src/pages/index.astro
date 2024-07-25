@@ -1,21 +1,27 @@
 ---
 import Basic from '@/layouts/Basic.astro'
 import PostList from '@/components/PostList'
+import Background from '@/components/Background'
 import dayjs from 'dayjs'
 import { Frontmatter } from '@/common/types'
 import { DESCRIPTION, TITLE } from '@/common/constants'
 
 const isDev = import.meta.env.DEV
 const canonicalURL = Astro.url
+
 const posts = await Astro.glob<Frontmatter>('./**/*.md')
 const nonDraftPosts = posts.filter(post => isDev || !post.frontmatter.draft)
 const sortedPosts = nonDraftPosts.sort(
   (p1, p2) => dayjs(p2.frontmatter.updatedAt).unix() - dayjs(p1.frontmatter.updatedAt).unix(),
 )
+
+const backgroundImports = import.meta.glob('/public/images/background/*.webp')
+const backgroundImages = Object.keys(backgroundImports).map(src => src.split('/public')[1])
 ---
 
 <Basic {canonicalURL}>
   <div class="home">
+    <Background client:load images={backgroundImages} />
     <div class="container">
       <div class="links">
         <a href="https://github.com/Gu-Miao/blog" target="_blank">Github</a>
@@ -40,9 +46,10 @@ const sortedPosts = nonDraftPosts.sort(
     @media screen and (min-width: 1100px) {
       & {
         justify-content: flex-start;
-        background-image: url(/images/background.webp);
         background-repeat: no-repeat;
+        background-color: #666;
         background-size: cover;
+        animation: background linear infinite;
       }
     }
     .container {
