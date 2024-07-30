@@ -25,7 +25,7 @@ reprint:
 
 🥵 看看近日温度
 
-![温度||300x394](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/66e6665c170945c0945e254bd69623dc~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![温度||300x394](/images/heard-that-this-animation-effect-can-be-played-all-day/1.webp)
 
 这种天气的周末，在下也只能躺在床上吹着空调，然后赞叹一下外卖小哥的艰辛，顺便照顾一下他们的生意了。
 
@@ -35,13 +35,13 @@ reprint:
 
 嗯？什么交互动效能玩一天，让我瞧瞧 👀：
 
-![动效||560x622](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/05bbd49805884ac0ac1389c589dca7e7~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![动效||560x622](/images/heard-that-this-animation-effect-can-be-played-all-day/2.webp)
 
 嗷~这不就那啥嘛，先如此如此......再这般这般......不就行了？
 
 习惯性的点开评论区，果然，大家都非常的热情呢，主动给设计者料理后事......
 
-![评论](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb3446205e2647778af931cfdd619c9f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![评论](/images/heard-that-this-animation-effect-can-be-played-all-day/3.webp)
 
 这样一个丝滑的交互能不能玩一天，在下不知道。
 
@@ -89,13 +89,15 @@ reprint:
   border-radius: 12px;
   overflow: hidden;
   background-color: #e2e6eb;
-  box-shadow: -10px -10px 15px #f5f9fd, 10px 10px 15px #d8dbe5; /* 阴影（阴影可以添加多条，别告诉我你不知道！！） */
+  box-shadow:
+    -10px -10px 15px #f5f9fd,
+    10px 10px 15px #d8dbe5; /* 阴影（阴影可以添加多条，别告诉我你不知道！！） */
 }
 ```
 
 就这样一个简单的容器盒子就画好了（别问我没有设计图颜色和尺寸都是怎么来的，截图+取色吸的 🙄）
 
-![容器](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c03e1a1ffd6d450296806657326f78b2~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![容器](/images/heard-that-this-animation-effect-can-be-played-all-day/4.webp)
 
 ### 滑块
 
@@ -103,7 +105,7 @@ reprint:
 
 尺寸**图解**：
 
-![尺寸图解](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/399bae1d2e61436c84d96e038747a082~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![尺寸图解](/images/heard-that-this-animation-effect-can-be-played-all-day/5.webp)
 
 直接**上才艺**~
 
@@ -116,14 +118,17 @@ reprint:
   width: calc(50% - 16px - 8px);
   height: calc(100% - 24px);
   border-radius: 12px;
-  box-shadow: inset 8px 8px 6px #d9dce6, inset -5px -5px 15px #f5f9fd, inset -5px -5px 15px #f5f9fd,
+  box-shadow:
+    inset 8px 8px 6px #d9dce6,
+    inset -5px -5px 15px #f5f9fd,
+    inset -5px -5px 15px #f5f9fd,
     inset 7px 7px 6px #d9dce6;
 }
 ```
 
 emmm....吸色好像不太靠谱？勉勉强强吧 🙄
 
-![容器+滑块](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6b67f3764e5146d5b265d547c5b9ad21~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![容器+滑块](/images/heard-that-this-animation-effect-can-be-played-all-day/6.webp)
 
 ### 按钮
 
@@ -159,7 +164,7 @@ emmm....吸色好像不太靠谱？勉勉强强吧 🙄
 
 最终的成品就是
 
-![静态内容](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eba6b244706444ebf837f3669fbd16c~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![静态内容](/images/heard-that-this-animation-effect-can-be-played-all-day/7.webp)
 
 嘿你别说，还挺有模有样呢？如果想再给按钮里添加类似抖音里那个图片，也是可以的，在下就不写了哈。
 
@@ -203,7 +208,7 @@ for (let i = 0; i < btns.length; i++) {
 
 这样点击后，滑块就会自己滑来滑去啦！
 
-![滑块](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f632954eb7e74cbaa832f2acdd3fae5b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![滑块](/images/heard-that-this-animation-effect-can-be-played-all-day/8.webp)
 
 ## 按钮动效
 
@@ -301,7 +306,7 @@ function resetBtn(btns) {
 
 文字的缩放和在下的小细节，能看出来吗？
 
-![按钮.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8814d89ca6134a95929f08aa25478e1b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![按钮.gif](/images/heard-that-this-animation-effect-can-be-played-all-day/9.webp)
 
 ## 容器动效
 
@@ -350,7 +355,7 @@ for (let i = 0; i < btns.length; i++) {
 >
 > 寄几零五八，骚年！
 
-![容器.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9cc26bed56904bd99c39d578df2c51e5~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![容器.gif](/images/heard-that-this-animation-effect-can-be-played-all-day/10.webp)
 
 ## 亿点细节
 
@@ -393,7 +398,7 @@ for (let i = 0; i < btns.length; i++) {
 
 好！这样在下通过肉眼观察然后还原的**丝玩天**动效就做好啦，先喽一眼**最终成品图**：
 
-![最终.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6038be5a78ad416e80ccf50fe9ee5992~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![最终.gif](/images/heard-that-this-animation-effect-can-be-played-all-day/11.webp)
 
 什么？你说好像没啥区别？🤨
 
@@ -455,9 +460,13 @@ body {
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--c-wrap-bg);
-  box-shadow: -10px -10px 15px var(--c-wrap-shadow1), 10px 10px 15px var(--c-wrap-shadow2);
+  box-shadow:
+    -10px -10px 15px var(--c-wrap-shadow1),
+    10px 10px 15px var(--c-wrap-shadow2);
   transform-origin: var(--wraper-origin);
-  transition: transform 0.4s cubic-bezier(0, 0, 0.48, 1), box-shadow 0.4s linear,
+  transition:
+    transform 0.4s cubic-bezier(0, 0, 0.48, 1),
+    box-shadow 0.4s linear,
     background-color 0.4s linear;
 }
 .rotateWrap {
@@ -471,9 +480,14 @@ body {
   width: calc(50% - 16px - 8px);
   height: calc(100% - 24px);
   border-radius: 12px;
-  box-shadow: inset 8px 8px 6px var(--c-btn-shadow1), inset -5px -5px 15px var(--c-btn-shadow2),
-    inset -5px -5px 15px var(--c-btn-shadow2), inset 7px 7px 6px var(--c-btn-shadow1);
-  transition: left 1s cubic-bezier(0.82, 0.12, 0.18, 0.88), box-shadow 0.4s linear;
+  box-shadow:
+    inset 8px 8px 6px var(--c-btn-shadow1),
+    inset -5px -5px 15px var(--c-btn-shadow2),
+    inset -5px -5px 15px var(--c-btn-shadow2),
+    inset 7px 7px 6px var(--c-btn-shadow1);
+  transition:
+    left 1s cubic-bezier(0.82, 0.12, 0.18, 0.88),
+    box-shadow 0.4s linear;
 }
 .btn {
   float: left;
@@ -558,7 +572,7 @@ function ThemeChange(bol) {
 
 🎉🎉 抑扬顿挫，欲扬先抑，先看成果，再谈原理 🎉🎉：
 
-![最终最终版本.gif](/images/heard-that-this-animation-effect-can-be-played-all-day/1.webp)
+![最终最终版本.gif](/images/heard-that-this-animation-effect-can-be-played-all-day/12.webp)
 
 > 其实就是字面意思，混工作量。
 >
@@ -574,7 +588,7 @@ function ThemeChange(bol) {
 
 今天混工作量就到此为止吧，再混就不礼貌了~
 
-![告辞||357x354](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6dd3ca20336e4e50ba42cc50bb1d25ab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+![告辞||357x354](/images/heard-that-this-animation-effect-can-be-played-all-day/13.webp)
 
 秋都立完了，劳烦秋天赶紧到来吧，我要出去玩！！！
 
