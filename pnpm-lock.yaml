@@ -75,6 +75,9 @@ importers:
       remark-smartypants:
         specifier: ^3.0.2
         version: 3.0.2
+      webp-converter:
+        specifier: ^2.3.3
+        version: 2.3.3
 
 packages:
 
@@ -2085,6 +2088,10 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
+  uuid@8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+
   validate-html-nesting@1.2.2:
     resolution: {integrity: sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==}
 
@@ -2151,6 +2158,9 @@ packages:
 
   web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
+
+  webp-converter@2.3.3:
+    resolution: {integrity: sha512-2p4XvPCIQ/CbUztEFA9vdkILVrRTdMtMxFpQTxlnPc3qx14MV5wnpVvK7m6pG70QdeL+Ser0+Tp843ONwh8VbQ==}
 
   which-pm-runs@1.1.0:
     resolution: {integrity: sha512-n1brCuqClxfFfq/Rb0ICg9giSZqCS+pLtccdag6C2HyufBrh3fBOiy9nb6ggRMvWOVH5GrdJskj5iGTZNxd7SA==}
@@ -2863,7 +2873,7 @@ snapshots:
       unist-util-visit: 5.0.0
       vfile: 6.0.2
       vite: 5.3.4(@types/node@20.14.11)(less@4.2.0)(lightningcss@1.25.1)(terser@5.31.1)
-      vitefu: 0.2.5(vite@5.3.4(@types/node@20.14.11)(less@4.2.0)(lightningcss@1.25.1)(terser@5.31.1))
+      vitefu: 0.2.5(vite@5.3.4(@types/node@20.14.11)(less@4.2.0)(lightningcss@1.25.1)(terser@5.31.3))
       which-pm: 3.0.0
       yargs-parser: 21.1.1
       zod: 3.23.8
@@ -4626,6 +4636,8 @@ snapshots:
       escalade: 3.1.2
       picocolors: 1.0.1
 
+  uuid@8.3.2: {}
+
   validate-html-nesting@1.2.2: {}
 
   vfile-location@5.0.3:
@@ -4693,15 +4705,15 @@ snapshots:
       lightningcss: 1.25.1
       terser: 5.31.3
 
-  vitefu@0.2.5(vite@5.3.4(@types/node@20.14.11)(less@4.2.0)(lightningcss@1.25.1)(terser@5.31.1)):
-    optionalDependencies:
-      vite: 5.3.4(@types/node@20.14.11)(less@4.2.0)(lightningcss@1.25.1)(terser@5.31.1)
-
   vitefu@0.2.5(vite@5.3.4(@types/node@20.14.11)(less@4.2.0)(lightningcss@1.25.1)(terser@5.31.3)):
     optionalDependencies:
       vite: 5.3.4(@types/node@20.14.11)(less@4.2.0)(lightningcss@1.25.1)(terser@5.31.3)
 
   web-namespaces@2.0.1: {}
+
+  webp-converter@2.3.3:
+    dependencies:
+      uuid: 8.3.2
 
   which-pm-runs@1.1.0: {}
 

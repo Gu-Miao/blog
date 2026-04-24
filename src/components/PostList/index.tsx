@@ -3,6 +3,7 @@ import dayjs from 'dayjs'
 import { debounce } from 'lodash-es'
 import { MarkdownInstance } from 'astro'
 import { Frontmatter } from '@/common/types'
+import { plainTextAbstract } from '@/utils/utils'
 import './index.less'
 
 interface SearchProps {
@@ -12,16 +13,21 @@ interface SearchProps {
 const Search: Component<SearchProps> = props => {
   const [value, setValue] = createSignal('')
   const filterdPosts = () =>
-    props.posts.filter(post =>
-      post.frontmatter.title.toLowerCase().includes(value().trim().toLowerCase()),
-    )
+    props.posts.filter(post => {
+      const q = value().trim().toLowerCase()
+      const title = (post.frontmatter?.title ?? '').toLowerCase()
+      if (q === '') return true
+      return title.includes(q)
+    })
 
   return (
     <div class="post-list">
       <input
         type="text"
         value={value()}
-        onInput={debounce(e => setValue(e.target.value))}
+        onInput={debounce((e: InputEvent & { currentTarget: HTMLInputElement }) =>
+          setValue(e.currentTarget.value),
+        )}
         placeholder="在此搜索..."
       />
       <Switch fallback={<p style={{ 'text-align': 'center', padding: '5em 0' }}>未匹配到文章</p>}>
@@ -33,16 +39,20 @@ const Search: Component<SearchProps> = props => {
                   <li>
                     <h3>
                       <a href={post.url} target="_blank">
-                        {post.frontmatter.title}
+                        {post.frontmatter?.title ?? '（无标题）'}
                       </a>
                     </h3>
-                    <p>{post.frontmatter.abstract}</p>
+                    <p>{plainTextAbstract(post.frontmatter?.abstract ?? '')}</p>
                     <p>
-                      <For each={post.frontmatter.tags}>
+                      <For each={post.frontmatter?.tags ?? []}>
                         {tag => <span class="tag">{tag}</span>}
                       </For>
                     </p>
-                    <p class="time">{dayjs(post.frontmatter.updatedAt).format('YYYY年M月D日')}</p>
+                    <p class="time">
+                      {post.frontmatter?.updatedAt
+                        ? dayjs(post.frontmatter.updatedAt).format('YYYY年M月D日')
+                        : ''}
+                    </p>
                   </li>
                 )
               }}

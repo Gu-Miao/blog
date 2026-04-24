@@ -4,6 +4,17 @@ export interface ExLinkProps {
 }
 
 const { href } = Astro.props as ExLinkProps
+const external = /^https?:\/\//i.test(href)
 ---
 
-<a href={href} target="_blank" rel="external nofollow noopener noreferrer"><slot /></a>
+{
+  external ? (
+    <a href={href} target="_blank" rel="external nofollow noopener noreferrer">
+      <slot />
+    </a>
+  ) : (
+    <a href={href}>
+      <slot />
+    </a>
+  )
+}

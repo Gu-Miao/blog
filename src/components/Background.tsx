@@ -29,8 +29,10 @@ function Background({ images }: BackGroundProps) {
     style.innerHTML = keyFrameDefinition
     document.head.append(style)
 
-    const home = document.querySelector('.home') as HTMLDivElement
-    home.style.animationDuration = `${interval * images.length}s`
+    const home = document.querySelector('.home')
+    if (home instanceof HTMLElement) {
+      home.style.animationDuration = `${interval * images.length}s`
+    }
   })
 
   return <div class="prefetch"></div>
