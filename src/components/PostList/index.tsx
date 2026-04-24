@@ -1,6 +1,6 @@
 import { Component, createSignal, Switch, Match, For } from 'solid-js'
 import dayjs from 'dayjs'
-import { debounce } from 'lodash-es'
+import { debounce } from 'es-toolkit'
 import { MarkdownInstance } from 'astro'
 import { Frontmatter } from '@/common/types'
 import { plainTextAbstract } from '@/utils/utils'
@@ -25,8 +25,9 @@ const Search: Component<SearchProps> = props => {
       <input
         type="text"
         value={value()}
-        onInput={debounce((e: InputEvent & { currentTarget: HTMLInputElement }) =>
-          setValue(e.currentTarget.value),
+        onInput={debounce(
+          (e: InputEvent & { currentTarget: HTMLInputElement }) => setValue(e.currentTarget.value),
+          100,
         )}
         placeholder="在此搜索..."
       />
